@@ -13,16 +13,19 @@ The solution consists of two primary UI interfaces acting in real-time synchroni
 
 ```mermaid
 graph TD
-    subgraph In-Store Ecosystem
-        A["📺 In-Store Gemini Console (Tablet/Desktop View)"] <-->|Real-Time Sync (Firestore)| B["📱 Customer Mobile Wallet App (PWA)"]
+    subgraph InStore["In-Store Ecosystem"]
+        A["In-Store Gemini Console (Tablet/Desktop View)"] <-->|Real-Time Sync (Firestore)| B["Customer Mobile Wallet App (PWA)"]
     end
 
-    subgraph GCP Cloud & AI Orchestration
-        B <-->|16-bit PCM Audio / WebSockets| C["⚡ Gemini Live API Proxy"]
-        A & B <-->|Image Payloads| D["📄 Document AI Custom OCR Processors"]
-        A & B <-->|Face Frame Streams| E["👁️ Cloud Vision API (Liveness / Biometric)"]
-        A & B <-->|Real-Time State Listener| F["🔥 Google Cloud Firestore NoSQL State Machine"]
-        F <-->|Mock JSON Payload Mapper| G["🏦 Mock Core Banking (Pennant LMS) & CRM (Salesforce)"]
+    subgraph GCP["GCP Cloud & AI Orchestration"]
+        B <-->|16-bit PCM Audio / WebSockets| C["Gemini Live API Proxy"]
+        A <-->|Image Payloads| D["Document AI Custom OCR Processors"]
+        B <-->|Image Payloads| D
+        A <-->|Face Frame Streams| E["Cloud Vision API (Liveness / Biometric)"]
+        B <-->|Face Frame Streams| E
+        A <-->|Real-Time State Listener| F["Google Cloud Firestore NoSQL State Machine"]
+        B <-->|Real-Time State Listener| F
+        F <-->|Mock JSON Payload Mapper| G["Mock Core Banking (Pennant LMS) & CRM (Salesforce)"]
     end
 ```
 

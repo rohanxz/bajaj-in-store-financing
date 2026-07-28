@@ -20,18 +20,18 @@ The solution uses real-time state synchronization via **Google Cloud Firestore**
 ```mermaid
 graph TD
     subgraph InStore["In-Store Ecosystem"]
-        A["In-Store Gemini Console (Tablet/Desktop View)"] -->|Real-Time Sync (Firestore)| B["Customer Mobile Wallet App (PWA)"]
+        A["In-Store Gemini Console"] -->|Real-Time Sync| B["Customer Mobile Wallet App"]
     end
 
     subgraph GCP["GCP Cloud & AI Orchestration"]
         B -->|16-bit PCM Audio / WebSockets| C["Gemini Live API Proxy"]
         A -->|Image Payloads| D["Document AI Custom OCR Processors"]
         B -->|Image Payloads| D
-        A -->|Face Frame Streams| E["Cloud Vision API (Liveness / Biometric)"]
+        A -->|Face Frame Streams| E["Cloud Vision API"]
         B -->|Face Frame Streams| E
-        A -->|Real-Time State Listener| F["Google Cloud Firestore NoSQL State Machine"]
+        A -->|Real-Time State Listener| F["Google Cloud Firestore State Machine"]
         B -->|Real-Time State Listener| F
-        F -->|Mock JSON Payload Mapper| G["Mock Core Banking (Pennant LMS) & CRM (Salesforce)"]
+        F -->|Mock JSON Payload Mapper| G["Mock Core Banking & CRM"]
     end
 ```
 

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bajaj Finance x CROMA — Dual Journey Interactive Wireframe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-dark">
+  <!-- Header Bar -->
+  <header class="app-header">
+    <div class="brand-group">
+      <div class="logo-badge">
+        <span class="logo-bfl">BAJAJ</span>
+        <span class="logo-divider">×</span>
+        <span class="logo-croma">croma</span>
+      </div>
+      <div class="header-titles">
+        <h1>In-Store Financing Dual Wireframe</h1>
+        <p>Synchronized Customer PWA & FOS Tablet Journey (18 Steps)</p>
+      </div>
+    </div>
+
+    <!-- Controls & Toggles -->
+    <div class="header-controls">
+      <div class="kyc-toggle-group">
+        <label for="kyc-switch" class="toggle-label">Customer KYC Flag:</label>
+        <div class="toggle-pill">
+          <button id="btn-kyc-no" class="kyc-btn active" title="Simulates full Aadhaar & PAN capture flow">KYC = NO</button>
+          <button id="btn-kyc-yes" class="kyc-btn" title="Skips document capture and jumps to MITC">KYC = YES</button>
+        </div>
+      </div>
+
+      <div class="kyc-toggle-group" id="face-auth-toggle-group">
+        <label class="toggle-label">Face Auth Result:</label>
+        <div class="toggle-pill">
+          <button id="btn-face-success" class="kyc-btn active" title="Live face matched with central database">SUCCESS (Match)</button>
+          <button id="btn-face-fail" class="kyc-btn" title="Face mismatch - requires Aadhaar & PAN scan">FAIL (Mismatch)</button>
+        </div>
+      </div>
+
+      <div class="view-mode-group">
+        <button id="btn-view-both" class="view-btn active" title="Dual View">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="8" height="18" rx="2"/><rect x="14" y="3" width="8" height="18" rx="2"/></svg>
+          Side-by-Side
+        </button>
+        <button id="btn-view-mobile" class="view-btn" title="Mobile Only">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          PWA App
+        </button>
+        <button id="btn-view-tablet" class="view-btn" title="Tablet Only">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          FOS Portal
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Interactive 18-Step Timeline -->
+  <nav class="timeline-container" aria-label="Journey steps timeline">
+    <div class="timeline-track" id="timeline-track">
+      <!-- Dynamically populated step chips -->
+    </div>
+  </nav>
+
+  <!-- Step Information Banner -->
+  <section class="step-banner">
+    <div class="step-badge" id="step-number-badge">Step 1 / 18</div>
+    <div class="step-info">
+      <h2 id="step-title">1. Customer PWA: View Profile & KYC Status</h2>
+      <p id="step-description">Customer opens the Bajaj EMI Network PWA (checked in at CROMA Phoenix) and views profile and KYC status.</p>
+    </div>
+    <div class="step-sync-status" id="step-sync-badge">
+      <span class="sync-dot"></span>
+      <span id="sync-text">Profile Active</span>
+    </div>
+  </section>
+
+  <!-- Dual Device Stage -->
+  <main class="device-stage" id="device-stage">
+    <!-- LEFT: Customer PWA (Mobile iPhone Frame) -->
+    <div class="device-wrapper mobile-wrapper" id="mobile-wrapper">
+      <div class="device-label">
+        <span class="device-icon">📱</span>
+        <div class="label-text">
+          <span class="label-title">Customer PWA App</span>
+          <span class="label-subtitle">Progressive Web App • Mobile View</span>
+        </div>
+        <span class="live-tag">LIVE PWA</span>
+      </div>
+
+      <div class="phone-frame">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <!-- Mobile Status Bar -->
+          <div class="mobile-status-bar">
+            <span class="status-time">09:41</span>
+            <div class="status-icons">
+              <span>5G</span>
+              <span>88%</span>
+            </div>
+          </div>
+
+          <!-- Mobile App Header -->
+          <div class="mobile-app-header">
+            <div class="mobile-brand">
+              <span class="bfl-text">BAJAJ</span>
+              <span class="finserv-text">FINSERV</span>
+            </div>
+            <div class="store-chip" id="mobile-store-chip">
+              <span class="chip-dot"></span>
+              <span>CROMA Mumbai</span>
+            </div>
+          </div>
+
+          <!-- Dynamic Mobile Content Area -->
+          <div class="mobile-content" id="mobile-content">
+            <!-- Rendered by JS -->
+          </div>
+
+          <!-- Mobile App Footer / Home Indicator -->
+          <div class="mobile-footer">
+            <div class="home-indicator"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CENTER SYNCHRONIZATION CONNECTOR -->
+    <div class="sync-connector" id="sync-connector">
+      <div class="connector-line"></div>
+      <div class="connector-badge" id="connector-badge">
+        <span>⚡ SYNC</span>
+      </div>
+      <div class="connector-line"></div>
+    </div>
+
+    <!-- RIGHT: FOS Tablet Portal (Tablet iPad Frame) -->
+    <div class="device-wrapper tablet-wrapper" id="tablet-wrapper">
+      <div class="device-label">
+        <span class="device-icon">🖥️</span>
+        <div class="label-text">
+          <span class="label-title">FOS Store Portal</span>
+          <span class="label-subtitle">Feet On Street Representative • Tablet View</span>
+        </div>
+        <span class="live-tag fos-tag">FOS ACTIVE</span>
+      </div>
+
+      <div class="tablet-frame">
+        <div class="tablet-camera"></div>
+        <div class="tablet-screen">
+          <!-- Tablet Portal Header -->
+          <div class="tablet-header">
+            <div class="tablet-brand-group">
+              <div class="tablet-logo">BFL x CROMA</div>
+              <span class="portal-badge">FOS RETAIL PORTAL v4.8</span>
+            </div>
+            <div class="tablet-user-info">
+              <span class="store-badge">🏪 CROMA High Street Phoenix #442</span>
+              <div class="rep-chip">
+                <span class="rep-avatar">Vikram R.</span>
+                <span class="rep-role">FOS Rep</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Tablet Content Area -->
+          <div class="tablet-body">
+            <!-- Left Sidebar: Customer Queue & Store Status -->
+            <aside class="tablet-sidebar" id="tablet-sidebar">
+              <!-- Rendered by JS -->
+            </aside>
+
+            <!-- Main Portal Workspace -->
+            <section class="tablet-workspace" id="tablet-workspace">
+              <!-- Rendered by JS -->
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bottom Navigation Controller -->
+  <footer class="app-footer">
+    <div class="footer-left">
+      <button id="btn-reset" class="footer-btn btn-secondary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+        Reset Journey
+      </button>
+      <button id="btn-autoplay" class="footer-btn btn-secondary" title="Auto advance through steps">
+        <span id="autoplay-icon">▶️</span>
+        <span id="autoplay-text">Auto Play</span>
+      </button>
+    </div>
+
+    <div class="footer-center">
+      <button id="btn-prev" class="footer-btn btn-nav">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        Previous Step
+      </button>
+      <div class="step-progress-pill">
+        <span id="footer-step-count">Step 1 of 18</span>
+      </div>
+      <button id="btn-next" class="footer-btn btn-primary">
+        Next Step
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+
+    <div class="footer-right">
+      <span class="shortcut-hint">Tip: Click interactive buttons inside mobile & tablet screens to advance!</span>
+    </div>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+INFO:     Started server process [5610]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8002 (Press CTRL+C to quit)
+INFO:     127.0.0.1:50863 - "WebSocket /ws/default_customer" [accepted]
+INFO:     connection open
+[CONFIG] Active Database Backend: Static JSON Mock Data (static)
+[SERVER] Client connected via WebSocket for customer ID: default_customer
+[LOCAL STORAGE] Payload updated for session: session_1a09b67ec1c9
+INFO:     127.0.0.1:50868 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50876 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+[SERVER] Connected to Gemini Live API session successfully for session_1a09b67ec1c9 (DB Backend: static).
+INFO:     127.0.0.1:50890 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51190 - "WebSocket /ws/default_customer" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51725 - "WebSocket /ws/default_customer" [accepted]
+INFO:     connection open
+[SERVER] Client session_1a09b67ec1c9 disconnected from input stream.
+[SERVER] Client connected via WebSocket for customer ID: default_customer
+[LOCAL STORAGE] Payload updated for session: session_03c00067aa9a
+[SERVER] Connected to Gemini Live API session successfully for session_03c00067aa9a (DB Backend: static).
+[SERVER] Model triggered function call: search_product_options for session_03c00067aa9a
+
+[TOOL EXECUTED] search_product_options via Static JSON returned 5 products for: 'iPhone 16' in 0.000s (0.3ms)
+
+[TOOL EXECUTED] search_product_options returned 5 products for: 'iPhone 16' in 0.000s (0.3ms)
+[LOCAL STORAGE] Payload updated for session: session_03c00067aa9a
+[LIVE API TIMING] Handled & dispatched response for 'search_product_options' in 0.006s
+[SERVER] Gemini output interrupted by user speech (session_03c00067aa9a).
+[SERVER] Model triggered function call: showcase_financing_schemes for session_03c00067aa9a
+
+[TOOL EXECUTED] showcase_financing_schemes via Static JSON returned 5 schemes for: 'Apple iPhone 16 Pro (Natural Titanium, 256GB Storage)' in 0.000s (0.4ms)
+
+[TOOL EXECUTED] showcase_financing_schemes returned 5 schemes for: 'Apple iPhone 16 Pro (Natural Titanium, 256GB Storage)' in 0.000s (0.5ms)
+[LOCAL STORAGE] Payload updated for session: session_03c00067aa9a
+[LIVE API TIMING] Handled & dispatched response for 'showcase_financing_schemes' in 0.002s
+[SERVER] Client session_03c00067aa9a disconnected from input stream.
+[SERVER] Gemini receive note (session_1a09b67ec1c9): 1000 None. The operation was cancelled.
+[LOCAL STORAGE] Payload updated for session: session_1a09b67ec1c9
+[COMPLIANCE AUDIT] Successfully packaged session artifacts locally into: local_db/session_1a09b67ec1c9/ and queued for GCS upload.
+[SERVER] Session session_1a09b67ec1c9 closed. All streams and transcripts successfully captured and saved.
+[AUDIT ERROR] Failed to upload audio_input.wav: 403 POST https://storage.mtls.googleapis.com/upload/storage/v1/b/bfl-pos-compliance-logs-bucket/o?uploadType=multipart: {
+  "error": {
+    "code": 403,
+    "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_1a09b67ec1c9/audio_input.wav' (or it may not exist).",
+    "errors": [
+      {
+        "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_1a09b67ec1c9/audio_input.wav' (or it may not exist).",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>)
+[AUDIT ERROR] Failed to upload audio_output.wav: 403 POST https://storage.mtls.googleapis.com/upload/storage/v1/b/bfl-pos-compliance-logs-bucket/o?uploadType=multipart: {
+  "error": {
+    "code": 403,
+    "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_1a09b67ec1c9/audio_output.wav' (or it may not exist).",
+    "errors": [
+      {
+        "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_1a09b67ec1c9/audio_output.wav' (or it may not exist).",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>)
+[AUDIT ERROR] Failed to upload transcripts.json: 403 POST https://storage.mtls.googleapis.com/upload/storage/v1/b/bfl-pos-compliance-logs-bucket/o?uploadType=multipart: {
+  "error": {
+    "code": 403,
+    "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_1a09b67ec1c9/transcripts.json' (or it may not exist).",
+    "errors": [
+      {
+        "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_1a09b67ec1c9/transcripts.json' (or it may not exist).",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>)
+[AUDIT ERROR] Failed to upload metadata.json: 403 POST https://storage.mtls.googleapis.com/upload/storage/v1/b/bfl-pos-compliance-logs-bucket/o?uploadType=multipart: {
+  "error": {
+    "code": 403,
+    "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_1a09b67ec1c9/metadata.json' (or it may not exist).",
+    "errors": [
+      {
+        "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_1a09b67ec1c9/metadata.json' (or it may not exist).",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>)
+[SERVER] Client connected via WebSocket for customer ID: default_customer
+[LOCAL STORAGE] Payload updated for session: session_1b5b692a0ec5
+[SERVER] Connected to Gemini Live API session successfully for session_1b5b692a0ec5 (DB Backend: static).
+[SERVER] Model triggered function call: search_product_options for session_1b5b692a0ec5
+
+[TOOL EXECUTED] search_product_options via Static JSON returned 5 products for: 'iPhone 16' in 0.000s (0.2ms)
+
+[TOOL EXECUTED] search_product_options returned 5 products for: 'iPhone 16' in 0.000s (0.2ms)
+[LOCAL STORAGE] Payload updated for session: session_1b5b692a0ec5
+[LIVE API TIMING] Handled & dispatched response for 'search_product_options' in 0.001s
+[SERVER] Gemini output interrupted by user speech (session_1b5b692a0ec5).
+[SERVER] Model triggered function call: showcase_financing_schemes for session_1b5b692a0ec5
+
+[TOOL EXECUTED] showcase_financing_schemes via Static JSON returned 5 schemes for: 'Apple iPhone 16 Pro (Natural Titanium, 256GB Storage)' in 0.000s (0.1ms)
+
+[TOOL EXECUTED] showcase_financing_schemes returned 5 schemes for: 'Apple iPhone 16 Pro (Natural Titanium, 256GB Storage)' in 0.000s (0.2ms)
+[LOCAL STORAGE] Payload updated for session: session_1b5b692a0ec5
+[LIVE API TIMING] Handled & dispatched response for 'showcase_financing_schemes' in 0.002s
+[SERVER] Gemini receive note (session_03c00067aa9a): 1000 None. The operation was cancelled.
+[LOCAL STORAGE] Payload updated for session: session_03c00067aa9a
+[COMPLIANCE AUDIT] Successfully packaged session artifacts locally into: local_db/session_03c00067aa9a/ and queued for GCS upload.
+[SERVER] Session session_03c00067aa9a closed. All streams and transcripts successfully captured and saved.
+[AUDIT ERROR] Failed to upload audio_input.wav: 403 POST https://storage.mtls.googleapis.com/upload/storage/v1/b/bfl-pos-compliance-logs-bucket/o?uploadType=resumable: {
+  "error": {
+    "code": 403,
+    "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_03c00067aa9a/audio_input.wav' (or it may not exist).",
+    "errors": [
+      {
+        "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_03c00067aa9a/audio_input.wav' (or it may not exist).",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.CREATED: 201>)
+[AUDIT ERROR] Failed to upload audio_output.wav: 403 POST https://storage.mtls.googleapis.com/upload/storage/v1/b/bfl-pos-compliance-logs-bucket/o?uploadType=multipart: {
+  "error": {
+    "code": 403,
+    "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_03c00067aa9a/audio_output.wav' (or it may not exist).",
+    "errors": [
+      {
+        "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_03c00067aa9a/audio_output.wav' (or it may not exist).",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>)
+[AUDIT ERROR] Failed to upload transcripts.json: 403 POST https://storage.mtls.googleapis.com/upload/storage/v1/b/bfl-pos-compliance-logs-bucket/o?uploadType=multipart: {
+  "error": {
+    "code": 403,
+    "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_03c00067aa9a/transcripts.json' (or it may not exist).",
+    "errors": [
+      {
+        "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_03c00067aa9a/transcripts.json' (or it may not exist).",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>)
+[AUDIT ERROR] Failed to upload metadata.json: 403 POST https://storage.mtls.googleapis.com/upload/storage/v1/b/bfl-pos-compliance-logs-bucket/o?uploadType=multipart: {
+  "error": {
+    "code": 403,
+    "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_03c00067aa9a/metadata.json' (or it may not exist).",
+    "errors": [
+      {
+        "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_03c00067aa9a/metadata.json' (or it may not exist).",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>)
+INFO:     127.0.0.1:51931 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52026 - "WebSocket /ws/default_customer" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52373 - "WebSocket /ws/default_customer" [accepted]
+INFO:     connection open
+[SERVER] Client session_1b5b692a0ec5 disconnected from input stream.
+[SERVER] Client connected via WebSocket for customer ID: default_customer
+[LOCAL STORAGE] Payload updated for session: session_8019b57f6d6d
+[SERVER] Connected to Gemini Live API session successfully for session_8019b57f6d6d (DB Backend: static).
+[SERVER] Model triggered function call: search_product_options for session_8019b57f6d6d
+
+[TOOL EXECUTED] search_product_options via Static JSON returned 5 products for: 'iPhone 16' in 0.000s (0.2ms)
+
+[TOOL EXECUTED] search_product_options returned 5 products for: 'iPhone 16' in 0.000s (0.2ms)
+[LOCAL STORAGE] Payload updated for session: session_8019b57f6d6d
+[LIVE API TIMING] Handled & dispatched response for 'search_product_options' in 0.001s
+[SERVER] Gemini output interrupted by user speech (session_8019b57f6d6d).
+[SERVER] Model triggered function call: showcase_financing_schemes for session_8019b57f6d6d
+
+[TOOL EXECUTED] showcase_financing_schemes via Static JSON returned 5 schemes for: 'Apple iPhone 16 Pro' in 0.000s (0.2ms)
+
+[TOOL EXECUTED] showcase_financing_schemes returned 5 schemes for: 'Apple iPhone 16 Pro' in 0.000s (0.2ms)
+[LOCAL STORAGE] Payload updated for session: session_8019b57f6d6d
+[LIVE API TIMING] Handled & dispatched response for 'showcase_financing_schemes' in 0.002s
+[SERVER] Client session_8019b57f6d6d disconnected from input stream.
+[SERVER] Client connected via WebSocket for customer ID: default_customer
+[LOCAL STORAGE] Payload updated for session: session_e336b0d8bf93
+[SERVER] Connected to Gemini Live API session successfully for session_e336b0d8bf93 (DB Backend: static).
+[SERVER] Model triggered function call: search_product_options for session_e336b0d8bf93
+
+[TOOL EXECUTED] search_product_options via Static JSON returned 5 products for: 'iPhone 16' in 0.000s (0.5ms)
+
+[TOOL EXECUTED] search_product_options returned 5 products for: 'iPhone 16' in 0.001s (0.6ms)
+[LOCAL STORAGE] Payload updated for session: session_e336b0d8bf93
+[LIVE API TIMING] Handled & dispatched response for 'search_product_options' in 0.003s
+[SERVER] Gemini output interrupted by user speech (session_e336b0d8bf93).
+[SERVER] Model triggered function call: showcase_financing_schemes for session_e336b0d8bf93
+
+[TOOL EXECUTED] showcase_financing_schemes via Static JSON returned 5 schemes for: 'Apple iPhone 16 Pro Max' in 0.000s (0.2ms)
+
+[TOOL EXECUTED] showcase_financing_schemes returned 5 schemes for: 'Apple iPhone 16 Pro Max' in 0.000s (0.3ms)
+[LOCAL STORAGE] Payload updated for session: session_e336b0d8bf93
+[LIVE API TIMING] Handled & dispatched response for 'showcase_financing_schemes' in 0.002s
+[SERVER] Gemini receive note (session_1b5b692a0ec5): 1000 None. The operation was cancelled.
+[LOCAL STORAGE] Payload updated for session: session_1b5b692a0ec5
+[COMPLIANCE AUDIT] Successfully packaged session artifacts locally into: local_db/session_1b5b692a0ec5/ and queued for GCS upload.
+[SERVER] Session session_1b5b692a0ec5 closed. All streams and transcripts successfully captured and saved.
+[AUDIT ERROR] Failed to upload audio_input.wav: 403 POST https://storage.mtls.googleapis.com/upload/storage/v1/b/bfl-pos-compliance-logs-bucket/o?uploadType=multipart: {
+  "error": {
+    "code": 403,
+    "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_1b5b692a0ec5/audio_input.wav' (or it may not exist).",
+    "errors": [
+      {
+        "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_1b5b692a0ec5/audio_input.wav' (or it may not exist).",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>)
+[AUDIT ERROR] Failed to upload audio_output.wav: 403 POST https://storage.mtls.googleapis.com/upload/storage/v1/b/bfl-pos-compliance-logs-bucket/o?uploadType=multipart: {
+  "error": {
+    "code": 403,
+    "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_1b5b692a0ec5/audio_output.wav' (or it may not exist).",
+    "errors": [
+      {
+        "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_1b5b692a0ec5/audio_output.wav' (or it may not exist).",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>)
+[AUDIT ERROR] Failed to upload transcripts.json: 403 POST https://storage.mtls.googleapis.com/upload/storage/v1/b/bfl-pos-compliance-logs-bucket/o?uploadType=multipart: {
+  "error": {
+    "code": 403,
+    "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_1b5b692a0ec5/transcripts.json' (or it may not exist).",
+    "errors": [
+      {
+        "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_1b5b692a0ec5/transcripts.json' (or it may not exist).",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>)
+[AUDIT ERROR] Failed to upload metadata.json: 403 POST https://storage.mtls.googleapis.com/upload/storage/v1/b/bfl-pos-compliance-logs-bucket/o?uploadType=multipart: {
+  "error": {
+    "code": 403,
+    "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_1b5b692a0ec5/metadata.json' (or it may not exist).",
+    "errors": [
+      {
+        "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_1b5b692a0ec5/metadata.json' (or it may not exist).",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>)
+[SERVER] Client session_e336b0d8bf93 disconnected from input stream.
+[SERVER] Gemini receive note (session_8019b57f6d6d): 1000 None. The operation was cancelled.
+[LOCAL STORAGE] Payload updated for session: session_8019b57f6d6d
+[COMPLIANCE AUDIT] Successfully packaged session artifacts locally into: local_db/session_8019b57f6d6d/ and queued for GCS upload.
+[SERVER] Session session_8019b57f6d6d closed. All streams and transcripts successfully captured and saved.
+[AUDIT ERROR] Failed to upload audio_input.wav: 403 POST https://storage.mtls.googleapis.com/upload/storage/v1/b/bfl-pos-compliance-logs-bucket/o?uploadType=resumable: {
+  "error": {
+    "code": 403,
+    "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_8019b57f6d6d/audio_input.wav' (or it may not exist).",
+    "errors": [
+      {
+        "message": "rohanxz@gcp.altostrat.com does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource '//storage.googleapis.com/projects/_/buckets/bfl-pos-compliance-logs-bucket/objects/customers/default_customer/2026-08-28/session_8019b57f6d6d/audio_input.wav' (or it may not exist).",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.CREATED: 201>)

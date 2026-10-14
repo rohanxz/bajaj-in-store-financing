@@ -130,3 +130,34 @@ sequenceDiagram
   - Step 14-15: Auto-Debit Bank Mandate E-Sign via SMS OTP.
 - **OTP-Verified Physical Handover**: Step 16-17 replaces passive acceptance with active IMEI barcode capture and customer OTP validation for device receipt.
 - **Real-Time Cross-Device Sync**: Every action on Customer PWA instantly updates visual status badges and workspace controls on the FOS Tablet Portal.
+---
+
+## 5. Technical API & Real-Time WebSocket Specifications
+
+### 5.1 REST API Architecture (FastAPI & Firestore)
+
+| Endpoint | Method | Role | Request Payload | Response / Firestore Sync |
+| :--- | :---: | :--- | :--- | :--- |
+| `/pwa/customer/login` | `POST` | Customer | `{"user_email": "..."}` | `{"access_token": "...", "token_type": "bearer"}` |
+| `/pwa/customer/store-check-in` | `POST` | Customer | `{"store_id": "CROMA Phoenix"}` | Creates doc in `bfl_poc_customer_state`, returns `document_id`. |
+| `/pwa/customer/catalog-screen/{id}` | `GET` | Customer | Header: `Bearer <token>` | Updates `current_screen = "Screen_Search_Active"`. |
+| `/pwa/customer/scheme-locked/{id}` | `POST` | Customer | `{name, product_details, item_price, available_limit, scheme, scheme_details}` | Updates `current_screen = "Screen_Scheme_Locked"`, `screenSchemeLocked`. |
+| `/pwa/customer/start-mitc/{id}` | `GET` | Customer / FOS | Header: `Bearer <token>` | Updates `current_screen = "Screen_Mitc"`. |
+| `/pwa/customer/generate-otp/{id}` | `GET` | System | Header: `Bearer <token>` | Generates 6-digit `mitc_otp`. |
+| `/pwa/customer/verify-otp/{id}` | `POST` | Customer | `{"otp": 123456}` | Validates OTP, updates `current_screen = "Screen_Configure_Mandate"`. |
+| `/pwa/customer/confirm-mandate/{id}` | `POST` | Customer | `{"mandate_id": "..."}` | Updates `current_screen = "Screen_Confirm_Mandate"`. |
+| `/pwa/customer/generate-loan-agreement/{id}` | `GET` | Customer | Header: `Bearer <token>` | Updates `current_screen = "Screen_Loan_Agreement"`. |
+
+### 5.2 Gemini Live Voice Streaming Protocol (`gemini-live-core-backend`)
+
+- **WebSocket Route**: `ws://<host>:<port>/ws/{customer_id}`
+- **Audio Capture**: 16kHz Mono PCM, 16-bit signed integer base64 chunks sent as:
+  ```json
+  {"type": "audio_chunk", "data": "<base64_encoded_16khz_pcm>"}
+  ```
+- **Audio Output**: 24kHz Mono PCM base64 chunks received as:
+  ```json
+  {"type": "audio_chunk", "data": "<base64_encoded_24khz_pcm>"}
+  ```
+- **Interruption Signal**: `{"type": "interrupted"}` immediately stops all scheduled Web Audio buffer playback.
+- **State Broadcast**: `{"type": "payload_update", "payload": {...}}` broadcasts synchronized product options and EMI schemes to the frontend in real time.

@@ -1,0 +1,1335 @@
+
+  VITE v8.2.2  ready in 80 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://192.168.0.111:5173/  en0
+11:52:02 AM [vite] (client) hmr update /src/context/AuthContext.tsx
+11:52:14 AM [vite] (client) hmr update /src/components/layout/ProfileDrawer.tsx
+11:52:29 AM [vite] (client) hmr update /src/App.tsx
+11:52:39 AM [vite] (client) hmr update /src/App.tsx
+11:54:21 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: FirebaseError: Firebase: Error (auth/network-request-failed).
+    at createErrorInternal (http://localhost:5173/node_modules/.vite/deps/firebase_auth.js?v=5ae29b00:435:35)
+    at _fail (http://localhost:5173/node_modules/.vite/deps/firebase_auth.js?v=5ae29b00:408:8)
+    at _performFetchWithErrorHandling (http://localhost:5173/node_modules/.vite/deps/firebase_auth.js?v=5ae29b00:765:3)
+    at async _performSignInRequest (http://localhost:5173/node_modules/.vite/deps/firebase_auth.js?v=5ae29b00:769:25)
+    at async signInWithCustomToken (http://localhost:5173/node_modules/.vite/deps/firebase_auth.js?v=5ae29b00:4852:19)
+    at async http://localhost:5173/src/services/firebaseConfig.ts:44:21
+11:54:21 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Firebase: Error (auth/network-request-failed).
+11:59:53 AM [vite] (client) hmr update /src/context/AuthContext.tsx, /src/App.tsx, /src/components/layout/StoreSelectDrawer.tsx, /src/components/screens/LoginScreen.tsx, /src/components/screens/StoreSelectScreen.tsx, /src/components/screens/HomeScreen.tsx
+11:59:53 AM [vite] (client) hmr invalidate /src/context/AuthContext.tsx Could not Fast Refresh ("CUSTOMER_PROFILES" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+11:59:53 AM [vite] (client) page reload src/context/AuthContext.tsx
+11:59:53 AM [vite] (client) hmr invalidate /src/components/screens/LoginScreen.tsx Could not Fast Refresh ("MOCK_CUSTOMERS" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+11:59:53 AM [vite] (client) hmr update /src/App.tsx
+11:59:53 AM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+12:00:51 PM [vite] (client) hmr update /src/App.tsx
+12:01:31 PM [vite] (client) hmr update /src/App.tsx
+12:01:54 PM [vite] (client) [console.warn] Product selection sync warning: 404
+12:01:58 PM [vite] (client) [console.warn] Product selection sync warning: 404
+12:01:58 PM [vite] (client) [console.warn] Product selection sync warning: 404
+12:01:58 PM [vite] (client) [console.warn] Product selection sync warning: 404
+12:05:48 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+12:05:51 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+12:15:24 PM [vite] (client) hmr update /src/App.tsx
+12:15:25 PM [vite] (client) [console.error] The final argument passed to useEffect changed size between renders. The order and size of this array must remain constant.
+
+Previous: [Apple iPhone 16 Pro Max, [object Object], live_voice_session, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyYWh1bC5zaGFybWFAYmFqYWpmaW5zZXJ2LmluIn0._kWmaAHW5_FxZEJxkmgQbF29pU6J92RfeEdLyMdnMS4, jpCENo00RHAAue2bOdOg]
+Incoming: [Apple iPhone 16 Pro Max, [object Object], [object Object],[object Object],[object Object],[object Object],[object Object], live_voice_session, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyYWh1bC5zaGFybWFAYmFqYWpmaW5zZXJ2LmluIn0._kWmaAHW5_FxZEJxkmgQbF29pU6J92RfeEdLyMdnMS4, jpCENo00RHAAue2bOdOg]
+12:15:25 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+12:16:55 PM [vite] (client) [console.warn] Error syncing product selection to backend: TypeError: Failed to fetch
+    at selectProductOnBackend (http://localhost:5173/src/services/reactBackendApi.ts?t=1787898593208:39:21)
+    at http://localhost:5173/src/App.tsx?t=1787899524422:157:4
+    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5ae29b00:12902:13)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5ae29b00:851:66)
+    at commitHookEffectListMount (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5ae29b00:6617:153)
+    at commitHookPassiveMountEffects (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5ae29b00:6652:55)
+    at commitPassiveMountOnFiber (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5ae29b00:7618:22)
+    at recursivelyTraversePassiveMountEffects (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5ae29b00:7606:5)
+    at commitPassiveMountOnFiber (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5ae29b00:7672:14)
+    at recursivelyTraversePassiveMountEffects (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5ae29b00:7606:5)
+12:20:47 PM [vite] (client) hmr update /src/App.tsx
+12:20:47 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+12:22:10 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+12:23:35 PM [vite] (client) hmr update /src/App.tsx
+12:23:55 PM [vite] (client) hmr update /src/App.tsx
+12:25:48 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+12:26:25 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+12:28:02 PM [vite] (client) hmr update /src/App.tsx
+12:28:38 PM [vite] (client) hmr update /src/App.tsx
+12:29:55 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+12:30:58 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+12:33:18 PM [vite] (client) hmr update /src/components/screens/SchemeLockedScreen.tsx
+12:33:38 PM [vite] (client) hmr update /src/App.tsx
+12:34:17 PM [vite] (client) hmr update /src/components/screens/SchemeLockedScreen.tsx
+12:42:52 PM [vite] (client) hmr update /src/context/AuthContext.tsx, /src/App.tsx, /src/components/layout/StoreSelectDrawer.tsx, /src/components/screens/LoginScreen.tsx, /src/components/screens/StoreSelectScreen.tsx, /src/components/screens/HomeScreen.tsx
+12:42:52 PM [vite] (client) hmr invalidate /src/context/AuthContext.tsx Could not Fast Refresh ("CUSTOMER_PROFILES" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+12:42:52 PM [vite] (client) page reload src/context/AuthContext.tsx
+12:42:52 PM [vite] (client) hmr invalidate /src/components/screens/LoginScreen.tsx Could not Fast Refresh ("MOCK_CUSTOMERS" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+12:42:52 PM [vite] (client) hmr update /src/App.tsx
+12:43:15 PM [vite] (client) hmr update /src/components/customer/CustomerFaceAuthWaitingScreen.tsx
+12:43:30 PM [vite] (client) hmr update /src/App.tsx
+12:44:52 PM [vite] (client) hmr update /src/App.tsx
+12:51:22 PM [vite] (client) hmr update /src/components/customer/CustomerKycVerifiedScreen.tsx
+12:55:57 PM [vite] (client) hmr update /src/components/customer/CustomerMitcSignedScreen.tsx
+12:56:25 PM [vite] (client) hmr update /src/components/customer/CustomerLoanSanctionedScreen.tsx
+12:57:00 PM [vite] (client) hmr update /src/components/customer/CustomerMitcSignedScreen.tsx
+12:57:05 PM [vite] (client) hmr update /src/components/customer/CustomerLoanSanctionedScreen.tsx
+1:09:38 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+1:13:29 PM [vite] (client) hmr update /src/components/screens/LiveVoiceSessionScreen.tsx
+1:13:42 PM [vite] (client) hmr update /src/App.tsx
+1:14:06 PM [vite] (client) hmr update /src/App.tsx
+1:15:12 PM [vite] (client) hmr update /src/components/screens/SchemeLockedScreen.tsx
+1:16:17 PM [vite] (client) hmr update /src/App.tsx
+1:16:42 PM [vite] (client) hmr update /src/App.tsx
+1:20:34 PM [vite] (client) hmr update /src/components/customer/CustomerKycVerifiedScreen.tsx
+1:20:41 PM [vite] (client) hmr update /src/components/customer/CustomerMitcSignedScreen.tsx
+1:20:45 PM [vite] (client) hmr update /src/components/customer/CustomerMitcSignedScreen.tsx
+1:20:53 PM [vite] (client) hmr update /src/components/customer/CustomerLoanSanctionedScreen.tsx
+1:21:04 PM [vite] (client) hmr update /src/components/customer/CustomerLoanSanctionedScreen.tsx
+1:21:13 PM [vite] (client) hmr update /src/components/customer/CustomerHandoverWaitingScreen.tsx
+1:21:20 PM [vite] (client) hmr update /src/components/customer/CustomerHandoverOtpScreen.tsx
+1:21:25 PM [vite] (client) hmr update /src/components/customer/CustomerOrderCompleteScreen.tsx
+1:31:37 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+1:36:14 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+1:36:47 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+1:39:04 PM [vite] (client) hmr update /src/components/screens/SchemeLockedScreen.tsx
+1:39:53 PM [vite] (client) hmr update /src/App.tsx
+1:40:01 PM [vite] (client) hmr update /src/App.tsx
+6:44:27 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+6:44:27 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+12:58:26 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+12:58:26 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+5:34:04 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+5:34:04 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+3:44:22 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+3:44:22 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+9:43:48 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+9:43:48 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+2:25:52 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+2:25:52 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+3:27:07 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+3:27:07 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+8:19:07 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+8:19:07 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+12:27:29 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+12:27:29 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+12:40:12 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: TypeError: Failed to fetch
+    at http://localhost:5173/src/services/firebaseConfig.ts:28:22
+    at ensureFirebaseAuth (http://localhost:5173/src/services/firebaseConfig.ts:53:4)
+    at http://localhost:5173/src/services/firebaseConfig.ts:57:1
+12:40:12 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Failed to fetch
+10:07:16 AM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+10:17:51 AM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+10:18:38 AM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+10:21:16 AM [vite] (client) hmr update /src/App.tsx
+10:23:27 AM [vite] (client) hmr update /src/App.tsx
+10:23:43 AM [vite] (client) hmr update /src/App.tsx
+10:23:52 AM [vite] (client) hmr update /src/App.tsx
+10:23:57 AM [vite] (client) hmr update /src/App.tsx
+10:24:06 AM [vite] (client) hmr update /src/context/AuthContext.tsx, /src/App.tsx, /src/components/layout/StoreSelectDrawer.tsx, /src/components/screens/LoginScreen.tsx, /src/components/screens/StoreSelectScreen.tsx, /src/components/screens/HomeScreen.tsx
+10:24:07 AM [vite] (client) hmr invalidate /src/context/AuthContext.tsx Could not Fast Refresh ("CUSTOMER_PROFILES" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+10:24:07 AM [vite] (client) page reload src/context/AuthContext.tsx
+10:24:07 AM [vite] (client) hmr invalidate /src/components/screens/LoginScreen.tsx Could not Fast Refresh ("MOCK_CUSTOMERS" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+10:24:07 AM [vite] (client) hmr update /src/App.tsx
+10:24:20 AM [vite] (client) hmr update /src/components/customer/CustomerLoanAuthOtpScreen.tsx
+10:24:34 AM [vite] (client) hmr update /src/components/customer/CustomerMitcSignedScreen.tsx
+10:24:45 AM [vite] (client) hmr update /src/components/customer/CustomerMandateOtpScreen.tsx
+10:24:52 AM [vite] (client) hmr update /src/components/customer/CustomerLoanSanctionedScreen.tsx
+10:24:58 AM [vite] (client) hmr update /src/components/customer/CustomerMitcOtpScreen.tsx
+10:29:35 AM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+10:30:09 AM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+10:34:17 AM [vite] (client) hmr update /src/App.tsx
+10:34:28 AM [vite] (client) hmr update /src/App.tsx
+10:34:46 AM [vite] (client) hmr update /src/components/screens/SchemeLockedScreen.tsx
+10:34:55 AM [vite] (client) hmr update /src/components/screens/SchemeLockedScreen.tsx
+10:35:27 AM [vite] (client) hmr update /src/App.tsx
+10:35:41 AM [vite] (client) hmr update /src/App.tsx
+10:36:30 AM [vite] (client) hmr update /src/App.tsx
+10:36:36 AM [vite] (client) hmr update /src/components/screens/SchemeLockedScreen.tsx
+10:40:16 AM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+10:40:24 AM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+10:41:39 AM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+10:58:38 AM [vite] (client) hmr update /src/components/screens/SchemeLockedScreen.tsx
+10:58:39 AM [vite] (client) [Unhandled error] ReferenceError: getProductIcon is not defined
+ > SchemeLockedScreen src/components/screens/SchemeLockedScreen.tsx:158:13
+    156 |              }}
+    157 |            >
+    158 |              {getProductIcon(displayProductName)}
+        |               ^
+    159 |            </div>
+    160 |            <div style={{ textAlign: 'left', minWidth: 0, flex: 1 }}>
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:25904:19
+ > renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:7662:21
+ > updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:10166:18
+ > beginWork node_modules/react-dom/cjs/react-dom-client.development.js:11778:17
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:871:29
+ > performUnitOfWork node_modules/react-dom/cjs/react-dom-client.development.js:17641:21
+ > workLoopSync node_modules/react-dom/cjs/react-dom-client.development.js:17469:40
+ > renderRootSync node_modules/react-dom/cjs/react-dom-client.development.js:17450:10
+ > performWorkOnRoot node_modules/react-dom/cjs/react-dom-client.development.js:16583:34
+
+10:58:39 AM [vite] (client) [console.warn] An error occurred in the <SchemeLockedScreen> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+10:58:53 AM [vite] (client) hmr update /src/components/screens/SchemeLockedScreen.tsx
+10:59:29 AM [vite] (client) hmr update /src/App.tsx
+10:59:38 AM [vite] (client) hmr update /src/App.tsx
+11:03:49 AM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+11:04:14 AM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+12:09:09 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+12:21:08 PM [vite] (client) hmr update /src/components/customer/CustomerMitcSignedScreen.tsx
+12:23:03 PM [vite] (client) hmr update /src/components/customer/CustomerLoanAuthOtpScreen.tsx
+12:32:00 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+12:52:46 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+12:52:46 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+3:47:21 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+3:47:21 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+6:44:38 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+6:44:38 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+6:45:03 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+6:46:06 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+12:18:18 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+12:18:18 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+12:35:08 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+12:35:08 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+10:30:59 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+10:30:59 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+10:50:17 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+10:50:17 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+3:04:18 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+3:04:18 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+3:16:27 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+3:16:27 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+6:24:16 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+6:24:16 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+6:52:38 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+6:52:38 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+7:19:48 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+7:19:48 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+7:30:12 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+7:30:12 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+8:28:29 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+8:28:29 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+9:30:01 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+9:30:01 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+1:03:33 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+1:03:33 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+1:03:59 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+1:03:59 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+2:29:10 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+2:29:10 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+10:24:16 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+10:24:16 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+10:50:58 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+10:50:58 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+10:50:59 AM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+10:51:05 AM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+10:51:36 AM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+10:52:25 AM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+10:53:08 AM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+11:13:35 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+11:13:35 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+11:57:55 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+11:57:55 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+12:30:09 PM [vite] (client) hmr update /src/App.tsx
+12:30:10 PM [vite] (client) [console.error] React has detected a change in the order of Hooks called by App. This will lead to bugs and errors if not fixed. For more information, read the Rules of Hooks: https://react.dev/link/rules-of-hooks
+
+   Previous render            Next render
+   ------------------------------------------------------
+1. useContext                 useContext
+2. useState                   useState
+3. useState                   useState
+4. useState                   useState
+5. useState                   useState
+6. useRef                     useRef
+7. useEffect                  useEffect
+8. useEffect                  useEffect
+9. useState                   useState
+10. useState                  useState
+11. useState                  useState
+12. useState                  useState
+13. useRef                    useRef
+14. useRef                    useRef
+15. useRef                    useRef
+16. useRef                    useRef
+17. useEffect                 useEffect
+18. useEffect                 useEffect
+19. useState                  useState
+20. useState                  useState
+21. useState                  useState
+22. useState                  useState
+23. useState                  useRef
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+12:30:10 PM [vite] (client) [Unhandled error] Error: Should have a queue. You are likely calling Hooks conditionally, which is not allowed. (https://react.dev/link/invalid-hook-call)
+ > updateReducerImpl node_modules/react-dom/cjs/react-dom-client.development.js:7973:14
+ > updateReducer node_modules/react-dom/cjs/react-dom-client.development.js:7968:13
+ > Object.useState node_modules/react-dom/cjs/react-dom-client.development.js:26511:17
+ > exports.useState node_modules/react/cjs/react.development.js:1263:33
+ > useGeminiLiveSocket src/hooks/useGeminiLiveSocket.ts:62:52
+    60 |    const sessionIdRef = useRef<string | null>(null);
+    61 |    useEffect(() => { sessionIdRef.current = sessionId; }, [sessionId]);
+    62 |    const [currentAiSubtitle, setCurrentAiSubtitle] = useState<string>('');
+       |                                                      ^
+    63 |    const [isListening, setIsListening] = useState<boolean>(false);
+    64 |    const [isSpeaking, setIsSpeaking] = useState<boolean>(false);
+ > App src/App.tsx:173:21
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:25904:19
+ > renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:7662:21
+ > updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:10166:18
+ > beginWork node_modules/react-dom/cjs/react-dom-client.development.js:11778:17
+
+12:30:10 PM [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+12:30:35 PM [vite] (client) hmr update /src/App.tsx
+12:31:25 PM [vite] (client) hmr update /src/components/screens/LiveVoiceSessionScreen.tsx
+12:32:11 PM [vite] (client) hmr update /src/components/screens/LiveVoiceSessionScreen.tsx
+12:32:16 PM [vite] (client) hmr update /src/App.tsx
+12:35:41 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+12:35:47 PM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+12:36:08 PM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+12:36:32 PM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+12:41:57 PM [vite] (client) hmr update /src/App.tsx
+12:41:57 PM [vite] (client) Pre-transform error: Transform failed with 2 errors:
+
+[31m[PARSE_ERROR] [0mInvalid Unicode escape sequence
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/hooks/useGeminiLiveSocket.ts:62:71 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m62 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249m[[0m[38;5;249mc[0m[38;5;249mu[0m[38;5;249mr[0m[38;5;249mr[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249mA[0m[38;5;249mi[0m[38;5;249mS[0m[38;5;249mu[0m[38;5;249mb[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249ml[0m[38;5;249me[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249ms[0m[38;5;249me[0m[38;5;249mt[0m[38;5;249mC[0m[38;5;249mu[0m[38;5;249mr[0m[38;5;249mr[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249mA[0m[38;5;249mi[0m[38;5;249mS[0m[38;5;249mu[0m[38;5;249mb[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249ml[0m[38;5;249me[0m[38;5;249m][0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249mu[0m[38;5;249ms[0m[38;5;249me[0m[38;5;249mS[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249m<[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249mr[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249mg[0m[38;5;249m>[0m[38;5;249m([0m[38;5;249m\[0m'[38;5;249m\[0m[38;5;249m'[0m[38;5;249m)[0m[38;5;249m;[0m
+ [38;5;240m   │[0m                                                                       ┬  
+ [38;5;240m   │[0m                                                                       ╰── 
+[38;5;246m────╯[0m
+
+[31m[PARSE_ERROR] [0mInvalid Unicode escape sequence
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/hooks/useGeminiLiveSocket.ts:62:73 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m62 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249m[[0m[38;5;249mc[0m[38;5;249mu[0m[38;5;249mr[0m[38;5;249mr[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249mA[0m[38;5;249mi[0m[38;5;249mS[0m[38;5;249mu[0m[38;5;249mb[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249ml[0m[38;5;249me[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249ms[0m[38;5;249me[0m[38;5;249mt[0m[38;5;249mC[0m[38;5;249mu[0m[38;5;249mr[0m[38;5;249mr[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249mA[0m[38;5;249mi[0m[38;5;249mS[0m[38;5;249mu[0m[38;5;249mb[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249ml[0m[38;5;249me[0m[38;5;249m][0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249mu[0m[38;5;249ms[0m[38;5;249me[0m[38;5;249mS[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249m<[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249mr[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249mg[0m[38;5;249m>[0m[38;5;249m([0m[38;5;249m\[0m[38;5;249m'[0m[38;5;249m\[0m'[38;5;249m)[0m[38;5;249m;[0m
+ [38;5;240m   │[0m                                                                         ┬  
+ [38;5;240m   │[0m                                                                         ╰── 
+[38;5;246m────╯[0m
+
+  Plugin: vite:oxc
+  File: /Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/src/hooks/useGeminiLiveSocket.ts
+12:41:57 PM [vite] Internal server error: Transform failed with 2 errors:
+
+[31m[PARSE_ERROR] [0mInvalid Unicode escape sequence
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/hooks/useGeminiLiveSocket.ts:62:71 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m62 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249m[[0m[38;5;249mc[0m[38;5;249mu[0m[38;5;249mr[0m[38;5;249mr[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249mA[0m[38;5;249mi[0m[38;5;249mS[0m[38;5;249mu[0m[38;5;249mb[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249ml[0m[38;5;249me[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249ms[0m[38;5;249me[0m[38;5;249mt[0m[38;5;249mC[0m[38;5;249mu[0m[38;5;249mr[0m[38;5;249mr[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249mA[0m[38;5;249mi[0m[38;5;249mS[0m[38;5;249mu[0m[38;5;249mb[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249ml[0m[38;5;249me[0m[38;5;249m][0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249mu[0m[38;5;249ms[0m[38;5;249me[0m[38;5;249mS[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249m<[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249mr[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249mg[0m[38;5;249m>[0m[38;5;249m([0m[38;5;249m\[0m'[38;5;249m\[0m[38;5;249m'[0m[38;5;249m)[0m[38;5;249m;[0m
+ [38;5;240m   │[0m                                                                       ┬  
+ [38;5;240m   │[0m                                                                       ╰── 
+[38;5;246m────╯[0m
+
+[31m[PARSE_ERROR] [0mInvalid Unicode escape sequence
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/hooks/useGeminiLiveSocket.ts:62:73 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m62 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249m[[0m[38;5;249mc[0m[38;5;249mu[0m[38;5;249mr[0m[38;5;249mr[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249mA[0m[38;5;249mi[0m[38;5;249mS[0m[38;5;249mu[0m[38;5;249mb[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249ml[0m[38;5;249me[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249ms[0m[38;5;249me[0m[38;5;249mt[0m[38;5;249mC[0m[38;5;249mu[0m[38;5;249mr[0m[38;5;249mr[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249mA[0m[38;5;249mi[0m[38;5;249mS[0m[38;5;249mu[0m[38;5;249mb[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249ml[0m[38;5;249me[0m[38;5;249m][0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249mu[0m[38;5;249ms[0m[38;5;249me[0m[38;5;249mS[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249m<[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249mr[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249mg[0m[38;5;249m>[0m[38;5;249m([0m[38;5;249m\[0m[38;5;249m'[0m[38;5;249m\[0m'[38;5;249m)[0m[38;5;249m;[0m
+ [38;5;240m   │[0m                                                                         ┬  
+ [38;5;240m   │[0m                                                                         ╰── 
+[38;5;246m────╯[0m
+
+  Plugin: vite:oxc
+  File: /Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/src/hooks/useGeminiLiveSocket.ts
+      at transformWithOxc (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:4103:19)
+      at TransformPluginContext.transform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:4174:26)
+      at EnvironmentPluginContainer.transform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:30932:51)
+      at async loadAndTransform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:20671:26)
+      at async viteTransformMiddleware (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:25205:20)
+12:41:57 PM [vite] (client) [console.error] [vite] Failed to reload /src/App.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+12:42:08 PM [vite] (client) hmr update /src/components/screens/LiveVoiceSessionScreen.tsx
+12:42:12 PM [vite] (client) hmr update /src/App.tsx
+12:42:12 PM [vite] (client) Pre-transform error: Transform failed with 2 errors:
+
+[31m[PARSE_ERROR] [0mInvalid Unicode escape sequence
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/hooks/useGeminiLiveSocket.ts:62:71 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m62 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249m[[0m[38;5;249mc[0m[38;5;249mu[0m[38;5;249mr[0m[38;5;249mr[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249mA[0m[38;5;249mi[0m[38;5;249mS[0m[38;5;249mu[0m[38;5;249mb[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249ml[0m[38;5;249me[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249ms[0m[38;5;249me[0m[38;5;249mt[0m[38;5;249mC[0m[38;5;249mu[0m[38;5;249mr[0m[38;5;249mr[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249mA[0m[38;5;249mi[0m[38;5;249mS[0m[38;5;249mu[0m[38;5;249mb[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249ml[0m[38;5;249me[0m[38;5;249m][0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249mu[0m[38;5;249ms[0m[38;5;249me[0m[38;5;249mS[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249m<[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249mr[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249mg[0m[38;5;249m>[0m[38;5;249m([0m[38;5;249m\[0m'[38;5;249m\[0m[38;5;249m'[0m[38;5;249m)[0m[38;5;249m;[0m
+ [38;5;240m   │[0m                                                                       ┬  
+ [38;5;240m   │[0m                                                                       ╰── 
+[38;5;246m────╯[0m
+
+[31m[PARSE_ERROR] [0mInvalid Unicode escape sequence
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/hooks/useGeminiLiveSocket.ts:62:73 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m62 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249m[[0m[38;5;249mc[0m[38;5;249mu[0m[38;5;249mr[0m[38;5;249mr[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249mA[0m[38;5;249mi[0m[38;5;249mS[0m[38;5;249mu[0m[38;5;249mb[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249ml[0m[38;5;249me[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249ms[0m[38;5;249me[0m[38;5;249mt[0m[38;5;249mC[0m[38;5;249mu[0m[38;5;249mr[0m[38;5;249mr[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249mA[0m[38;5;249mi[0m[38;5;249mS[0m[38;5;249mu[0m[38;5;249mb[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249ml[0m[38;5;249me[0m[38;5;249m][0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249mu[0m[38;5;249ms[0m[38;5;249me[0m[38;5;249mS[0m[38;5;249mt[0m[38;5;249ma[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249m<[0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249mr[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249mg[0m[38;5;249m>[0m[38;5;249m([0m[38;5;249m\[0m[38;5;249m'[0m[38;5;249m\[0m'[38;5;249m)[0m[38;5;249m;[0m
+ [38;5;240m   │[0m                                                                         ┬  
+ [38;5;240m   │[0m                                                                         ╰── 
+[38;5;246m────╯[0m
+
+  Plugin: vite:oxc
+  File: /Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/src/hooks/useGeminiLiveSocket.ts
+12:42:12 PM [vite] (client) [console.error] [vite] Failed to reload /src/App.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+12:42:24 PM [vite] (client) hmr update /src/App.tsx
+12:42:24 PM [vite] (client) [Unhandled error] Error: Should have a queue. You are likely calling Hooks conditionally, which is not allowed. (https://react.dev/link/invalid-hook-call)
+ > updateReducerImpl node_modules/react-dom/cjs/react-dom-client.development.js:7973:14
+ > updateReducer node_modules/react-dom/cjs/react-dom-client.development.js:7968:13
+ > Object.useState node_modules/react-dom/cjs/react-dom-client.development.js:26511:17
+ > exports.useState node_modules/react/cjs/react.development.js:1263:33
+ > useGeminiLiveSocket src/hooks/useGeminiLiveSocket.ts:66:38
+    64 |    const [isListening, setIsListening] = useState<boolean>(false);
+    65 |    const [isSpeaking, setIsSpeaking] = useState<boolean>(false);
+    66 |    const [audioLevel, setAudioLevel] = useState<number>(0);
+       |                                        ^
+    67 |  
+    68 |    const wsRef = useRef<WebSocket | null>(null);
+ > App src/App.tsx:173:21
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:25904:19
+ > renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:7662:21
+ > updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:10166:18
+ > beginWork node_modules/react-dom/cjs/react-dom-client.development.js:11778:17
+
+12:42:24 PM [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+12:45:35 PM [vite] (client) [console.warn] WebSocket connection closed: code=1012, reason=
+12:49:41 PM [vite] (client) hmr update /src/App.tsx
+12:49:42 PM [vite] (client) [console.error] WebSocket Error: {"isTrusted":true}
+12:49:42 PM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+12:50:59 PM [vite] (client) [console.error] Chat error: TypeError: Failed to fetch
+    at http://localhost:5173/src/hooks/useGeminiLiveSocket.ts?t=1788419544091:375:22
+    at handleSend (http://localhost:5173/src/components/screens/LiveVoiceSessionScreen.tsx?t=1788419528257:28:4)
+    at onKeyDown (http://localhost:5173/src/components/screens/LiveVoiceSessionScreen.tsx?t=1788419528257:454:45)
+    at executeDispatch (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5ae29b00:9141:5)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5ae29b00:851:66)
+    at processDispatchQueue (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5ae29b00:9167:27)
+    at http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5ae29b00:9454:5
+    at batchedUpdates$1 (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5ae29b00:2044:12)
+    at dispatchEventForPluginEventSystem (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5ae29b00:9240:4)
+    at dispatchEvent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5ae29b00:11319:29)
+12:51:56 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+12:52:20 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+12:52:33 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+12:52:35 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+12:53:38 PM [vite] (client) hmr update /src/App.tsx
+12:53:38 PM [vite] (client) [console.error] React has detected a change in the order of Hooks called by App. This will lead to bugs and errors if not fixed. For more information, read the Rules of Hooks: https://react.dev/link/rules-of-hooks
+
+   Previous render            Next render
+   ------------------------------------------------------
+1. useContext                 useContext
+2. useState                   useState
+3. useState                   useState
+4. useState                   useState
+5. useState                   useState
+6. useRef                     useRef
+7. useEffect                  useEffect
+8. useEffect                  useEffect
+9. useState                   useState
+10. useState                  useState
+11. useState                  useState
+12. useState                  useState
+13. useRef                    useRef
+14. useRef                    useRef
+15. useRef                    useRef
+16. useRef                    useRef
+17. useEffect                 useEffect
+18. useEffect                 useEffect
+19. useState                  useState
+20. useState                  useState
+21. useState                  useState
+22. useState                  useState
+23. useRef                    useRef
+24. useEffect                 useEffect
+25. useRef                    useRef
+26. useEffect                 useEffect
+27. useState                  useState
+28. useState                  useState
+29. useState                  useState
+30. useState                  useState
+31. useState                  useState
+32. useRef                    useRef
+33. useRef                    useRef
+34. useRef                    useRef
+35. useRef                    useRef
+36. useRef                    useRef
+37. useRef                    useRef
+38. useRef                    useRef
+39. useRef                    useRef
+40. useRef                    useRef
+41. useRef                    useRef
+42. useRef                    useRef
+43. useCallback               useCallback
+44. useCallback               useCallback
+45. useCallback               useCallback
+46. useCallback               useCallback
+47. useCallback               useCallback
+48. useCallback               useCallback
+49. useCallback               useCallback
+50. useCallback               useCallback
+51. useCallback               useCallback
+52. useEffect                 useCallback
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+12:53:38 PM [vite] (client) [Unhandled error] Error: Rendered more hooks than during the previous render.
+ > updateWorkInProgressHook node_modules/react-dom/cjs/react-dom-client.development.js:7848:16
+ > updateEffectImpl node_modules/react-dom/cjs/react-dom-client.development.js:8642:17
+ > Object.useEffect node_modules/react-dom/cjs/react-dom-client.development.js:26461:8
+ > exports.useEffect node_modules/react/cjs/react.development.js:1225:33
+ > App src/App.tsx:323:2
+    321 |  
+    322 |    // Automatically restore and react to Firestore document state updates
+    323 |    useEffect(() => {
+        |    ^
+    324 |      if (!isLoggedIn) return;
+    325 |  
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:25904:19
+ > renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:7662:21
+ > updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:10166:18
+ > beginWork node_modules/react-dom/cjs/react-dom-client.development.js:11778:17
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:871:29
+
+12:53:38 PM [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+12:53:38 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+12:54:03 PM [vite] (client) hmr update /src/App.tsx
+12:54:04 PM [vite] (client) [Unhandled error] ReferenceError: Cannot access 'liveSocket' before initialization
+ > App src/App.tsx:105:18
+    103 |        liveSocket.resetSession();
+    104 |      }
+    105 |    }, [isLoggedIn, liveSocket]);
+        |                    ^
+    106 |  
+    107 |    // Sequential helper to ensure product selection is completed & successful on backend before proceeding
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:25904:19
+ > renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:7662:21
+ > updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:10166:18
+ > beginWork node_modules/react-dom/cjs/react-dom-client.development.js:11778:17
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:871:29
+ > performUnitOfWork node_modules/react-dom/cjs/react-dom-client.development.js:17641:21
+ > workLoopSync node_modules/react-dom/cjs/react-dom-client.development.js:17469:40
+ > renderRootSync node_modules/react-dom/cjs/react-dom-client.development.js:17450:10
+ > performWorkOnRoot node_modules/react-dom/cjs/react-dom-client.development.js:16583:34
+
+12:54:04 PM [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+12:54:26 PM [vite] (client) hmr update /src/App.tsx
+12:54:54 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+12:57:35 PM [vite] (client) hmr update /src/components/screens/LiveVoiceSessionScreen.tsx
+12:57:44 PM [vite] (client) hmr update /src/App.tsx
+12:59:43 PM [vite] (client) hmr update /src/components/screens/LiveVoiceSessionScreen.tsx
+12:59:45 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+12:59:52 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+1:01:10 PM [vite] (client) hmr update /src/components/screens/LiveVoiceSessionScreen.tsx
+1:01:10 PM [vite] Internal server error: Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mUnterminated regular expression
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/components/screens/LiveVoiceSessionScreen.tsx:37:14 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m37 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m.[0m[38;5;249mr[0m[38;5;249me[0m[38;5;249mp[0m[38;5;249ml[0m[38;5;249ma[0m[38;5;249mc[0m[38;5;249me[0m[38;5;249m([0m/([^
+ [38;5;240m   │[0m              ──┬──  
+ [38;5;240m   │[0m                ╰──── 
+[38;5;246m────╯[0m
+
+  Plugin: vite:oxc
+  File: /Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/src/components/screens/LiveVoiceSessionScreen.tsx
+      at transformWithOxc (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:4103:19)
+      at TransformPluginContext.transform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:4174:26)
+      at EnvironmentPluginContainer.transform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:30932:51)
+      at async loadAndTransform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:20671:26)
+      at async viteTransformMiddleware (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:25205:20)
+1:01:10 PM [vite] (client) [console.error] [vite] Failed to reload /src/components/screens/LiveVoiceSessionScreen.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+1:01:28 PM [vite] (client) hmr update /src/components/screens/LiveVoiceSessionScreen.tsx
+1:01:28 PM [vite] Internal server error: Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mUnterminated regular expression
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/components/screens/LiveVoiceSessionScreen.tsx:37:14 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m37 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m.[0m[38;5;249mr[0m[38;5;249me[0m[38;5;249mp[0m[38;5;249ml[0m[38;5;249ma[0m[38;5;249mc[0m[38;5;249me[0m[38;5;249m([0m/([^
+ [38;5;240m   │[0m              ──┬──  
+ [38;5;240m   │[0m                ╰──── 
+[38;5;246m────╯[0m
+
+  Plugin: vite:oxc
+  File: /Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/src/components/screens/LiveVoiceSessionScreen.tsx
+      at transformWithOxc (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:4103:19)
+      at TransformPluginContext.transform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:4174:26)
+      at EnvironmentPluginContainer.transform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:30932:51)
+      at async loadAndTransform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:20671:26)
+      at async viteTransformMiddleware (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:25205:20)
+1:01:28 PM [vite] (client) [console.error] [vite] Failed to reload /src/components/screens/LiveVoiceSessionScreen.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+1:02:03 PM [vite] (client) hmr update /src/components/screens/LiveVoiceSessionScreen.tsx
+1:02:38 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+1:05:13 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+1:06:22 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+1:07:49 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+1:08:38 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+1:18:14 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+1:19:14 PM [vite] (client) hmr update /src/components/screens/HomeScreen.tsx
+1:22:13 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+1:22:45 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+1:23:15 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+1:24:24 PM [vite] (client) hmr update /src/App.tsx
+1:24:25 PM [vite] (client) [console.error] React has detected a change in the order of Hooks called by App. This will lead to bugs and errors if not fixed. For more information, read the Rules of Hooks: https://react.dev/link/rules-of-hooks
+
+   Previous render            Next render
+   ------------------------------------------------------
+1. useContext                 useContext
+2. useState                   useState
+3. useState                   useState
+4. useState                   useState
+5. useState                   useState
+6. useRef                     useRef
+7. useEffect                  useEffect
+8. useEffect                  useEffect
+9. useState                   useState
+10. useState                  useState
+11. useState                  useState
+12. useState                  useState
+13. useRef                    useRef
+14. useRef                    useRef
+15. useRef                    useRef
+16. useRef                    useRef
+17. useEffect                 useEffect
+18. useRef                    useRef
+19. useEffect                 useEffect
+20. useState                  useState
+21. useState                  useState
+22. useState                  useState
+23. useState                  useState
+24. useRef                    useRef
+25. useEffect                 useEffect
+26. useRef                    useRef
+27. useEffect                 useEffect
+28. useState                  useState
+29. useState                  useState
+30. useState                  useState
+31. useState                  useState
+32. useState                  useRef
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1:24:25 PM [vite] (client) [Unhandled error] Error: Should have a queue. You are likely calling Hooks conditionally, which is not allowed. (https://react.dev/link/invalid-hook-call)
+ > updateReducerImpl node_modules/react-dom/cjs/react-dom-client.development.js:7973:14
+ > updateReducer node_modules/react-dom/cjs/react-dom-client.development.js:7968:13
+ > Object.useState node_modules/react-dom/cjs/react-dom-client.development.js:26511:17
+ > exports.useState node_modules/react/cjs/react.development.js:1263:33
+ > useGeminiLiveSocket src/hooks/useGeminiLiveSocket.ts:68:38
+    66 |    const isListeningRef = useRef<boolean>(false);
+    67 |    useEffect(() => { isListeningRef.current = isListening; }, [isListening]);
+    68 |    const [isSpeaking, setIsSpeaking] = useState<boolean>(false);
+       |                                        ^
+    69 |    const [audioLevel, setAudioLevel] = useState<number>(0);
+    70 |  
+ > App src/App.tsx:176:21
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:25904:19
+ > renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:7662:21
+ > updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:10166:18
+ > beginWork node_modules/react-dom/cjs/react-dom-client.development.js:11778:17
+
+1:24:25 PM [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+1:24:48 PM [vite] (client) hmr update /src/App.tsx
+1:25:01 PM [vite] (client) hmr update /src/App.tsx
+1:25:33 PM [vite] (client) hmr update /src/components/screens/LiveVoiceSessionScreen.tsx
+1:25:33 PM [vite] Internal server error: Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mExpected a semicolon or an implicit semicolon after a statement, but found none
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/components/screens/LiveVoiceSessionScreen.tsx:6:11 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m6 │[0m [38;5;249mi[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249mr[0m[38;5;249mf[0m[38;5;249ma[0m[38;5;249mc[0m[38;5;249me[0m[38;5;249m [0m[38;5;249mL[0m[38;5;249mi[0m[38;5;249mv[0m[38;5;249me[0m[38;5;249mV[0m[38;5;249mo[0m[38;5;249mi[0m[38;5;249mc[0m[38;5;249me[0m[38;5;249mS[0m[38;5;249me[0m[38;5;249ms[0m[38;5;249ms[0m[38;5;249mi[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249mS[0m[38;5;249mc[0m[38;5;249mr[0m[38;5;249me[0m[38;5;249me[0m[38;5;249mn[0m[38;5;249mP[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249mp[0m[38;5;249ms[0m[38;5;249m [0m[38;5;249m{[0m
+ [38;5;240m  │[0m           │ 
+ [38;5;240m  │[0m           ╰─ 
+ [38;5;240m  │[0m 
+ [38;5;240m  │[0m [38;5;115mHelp[0m: Try inserting a semicolon here
+[38;5;246m───╯[0m
+
+  Plugin: vite:oxc
+  File: /Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/src/components/screens/LiveVoiceSessionScreen.tsx
+      at transformWithOxc (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:4103:19)
+      at TransformPluginContext.transform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:4174:26)
+      at EnvironmentPluginContainer.transform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:30932:51)
+      at async loadAndTransform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:20671:26)
+      at async viteTransformMiddleware (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:25205:20)
+1:25:33 PM [vite] (client) [console.error] [vite] Failed to reload /src/components/screens/LiveVoiceSessionScreen.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+1:25:45 PM [vite] (client) hmr update /src/components/screens/LiveVoiceSessionScreen.tsx
+1:25:45 PM [vite] Internal server error: Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mUnexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/components/screens/LiveVoiceSessionScreen.tsx:355:19 [38;5;246m][0m
+     [38;5;246m│[0m
+ [38;5;246m355 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0m[38;5;249m/[0m[38;5;249md[0m[38;5;249mi[0m[38;5;249mv[0m[38;5;249m>[0m[38;5;249mE[0m[38;5;249mn[0m[38;5;249md[0m[38;5;249mR[0m[38;5;249me[0m[38;5;249mf[0m[38;5;249m}[0m[38;5;249m [0m[38;5;249m/[0m[38;5;249m>[0m
+ [38;5;240m    │[0m                   │ 
+ [38;5;240m    │[0m                   ╰─ 
+[38;5;246m─────╯[0m
+
+  Plugin: vite:oxc
+  File: /Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/src/components/screens/LiveVoiceSessionScreen.tsx
+      at transformWithOxc (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:4103:19)
+      at TransformPluginContext.transform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:4174:26)
+      at EnvironmentPluginContainer.transform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:30932:51)
+      at async loadAndTransform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:20671:26)
+      at async viteTransformMiddleware (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:25205:20)
+1:25:45 PM [vite] (client) [console.error] [vite] Failed to reload /src/components/screens/LiveVoiceSessionScreen.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+1:25:51 PM [vite] (client) hmr update /src/components/screens/LiveVoiceSessionScreen.tsx
+1:25:58 PM [vite] (client) hmr update /src/App.tsx
+1:26:49 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+1:28:12 PM [vite] (client) hmr update /src/App.tsx
+1:28:13 PM [vite] (client) [console.error] WebSocket Error: {"isTrusted":true}
+1:28:13 PM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+1:28:35 PM [vite] (client) hmr update /src/components/customer/CustomerFaceAuthWaitingScreen.tsx
+1:31:22 PM [vite] (client) [console.error] WebSocket Error: {"isTrusted":true}
+1:31:22 PM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+1:31:22 PM [vite] (client) [console.error] WebSocket Error: {"isTrusted":true}
+1:31:22 PM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+1:32:21 PM [vite] (client) hmr update /src/components/screens/LiveVoiceSessionScreen.tsx
+1:34:16 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+1:37:42 PM [vite] (client) hmr update /src/App.tsx
+1:37:42 PM [vite] (client) Pre-transform error: Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mUnexpected token
+     [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/hooks/useGeminiLiveSocket.ts:518:10 [38;5;246m][0m
+     [38;5;246m│[0m
+ [38;5;246m518 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m;[0m[38;5;249m [0melse[38;5;249m [0m[38;5;249mi[0m[38;5;249mf[0m[38;5;249m [0m[38;5;249m([0m[38;5;249mm[0m[38;5;249me[0m[38;5;249ms[0m[38;5;249ms[0m[38;5;249ma[0m[38;5;249mg[0m[38;5;249me[0m[38;5;249m.[0m[38;5;249mt[0m[38;5;249my[0m[38;5;249mp[0m[38;5;249me[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m=[0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m'[0m[38;5;249mt[0m[38;5;249mu[0m[38;5;249mr[0m[38;5;249mn[0m[38;5;249m_[0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mm[0m[38;5;249mp[0m[38;5;249ml[0m[38;5;249me[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249m'[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m{[0m
+ [38;5;240m    │[0m          ──┬─  
+ [38;5;240m    │[0m            ╰─── 
+[38;5;246m─────╯[0m
+
+  Plugin: vite:oxc
+  File: /Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/src/hooks/useGeminiLiveSocket.ts
+1:37:42 PM [vite] Internal server error: Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mUnexpected token
+     [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/hooks/useGeminiLiveSocket.ts:518:10 [38;5;246m][0m
+     [38;5;246m│[0m
+ [38;5;246m518 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m;[0m[38;5;249m [0melse[38;5;249m [0m[38;5;249mi[0m[38;5;249mf[0m[38;5;249m [0m[38;5;249m([0m[38;5;249mm[0m[38;5;249me[0m[38;5;249ms[0m[38;5;249ms[0m[38;5;249ma[0m[38;5;249mg[0m[38;5;249me[0m[38;5;249m.[0m[38;5;249mt[0m[38;5;249my[0m[38;5;249mp[0m[38;5;249me[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m=[0m[38;5;249m=[0m[38;5;249m [0m[38;5;249m'[0m[38;5;249mt[0m[38;5;249mu[0m[38;5;249mr[0m[38;5;249mn[0m[38;5;249m_[0m[38;5;249mc[0m[38;5;249mo[0m[38;5;249mm[0m[38;5;249mp[0m[38;5;249ml[0m[38;5;249me[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249m'[0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m{[0m
+ [38;5;240m    │[0m          ──┬─  
+ [38;5;240m    │[0m            ╰─── 
+[38;5;246m─────╯[0m
+
+  Plugin: vite:oxc
+  File: /Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/src/hooks/useGeminiLiveSocket.ts
+      at transformWithOxc (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:4103:19)
+      at TransformPluginContext.transform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:4174:26)
+      at EnvironmentPluginContainer.transform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:30932:51)
+      at async loadAndTransform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:20671:26)
+      at async viteTransformMiddleware (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:25205:20)
+1:37:42 PM [vite] (client) [console.error] [vite] Failed to reload /src/App.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+1:37:49 PM [vite] (client) hmr update /src/App.tsx
+1:40:34 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+1:40:40 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+1:42:21 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+1:43:17 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+1:43:22 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+1:44:59 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+1:47:21 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+1:48:29 PM [vite] (client) hmr update /src/components/layout/ProfileDrawer.tsx
+1:50:52 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+2:04:16 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+2:05:05 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+2:05:12 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+2:05:27 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+2:05:28 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+2:07:15 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+2:07:35 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+2:10:01 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+2:11:08 PM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+2:11:31 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+2:12:17 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+2:12:18 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+2:12:21 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+2:22:28 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+2:31:00 PM [vite] (client) [console.warn] WebSocket connection closed: code=1005, reason=
+3:25:16 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+3:25:16 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+6:38:38 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+6:38:38 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+7:25:15 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+7:25:15 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+9:27:07 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+9:27:07 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+10:07:59 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+10:07:59 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+12:26:59 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+12:26:59 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+1:35:26 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+1:35:26 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+1:57:11 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+1:57:11 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+2:36:20 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+2:36:20 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+9:53:28 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+9:53:28 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+4:30:17 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+4:30:17 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+5:37:00 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+5:37:00 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+5:47:32 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+5:47:32 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+5:38:25 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+5:38:25 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+2:40:38 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+2:40:38 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+12:08:26 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: FirebaseError: Firebase: Error (auth/network-request-failed).
+    at createErrorInternal (http://localhost:5173/node_modules/.vite/deps/firebase_auth.js?v=5ae29b00:435:35)
+    at _fail (http://localhost:5173/node_modules/.vite/deps/firebase_auth.js?v=5ae29b00:408:8)
+    at _performFetchWithErrorHandling (http://localhost:5173/node_modules/.vite/deps/firebase_auth.js?v=5ae29b00:765:3)
+    at async _performSignInRequest (http://localhost:5173/node_modules/.vite/deps/firebase_auth.js?v=5ae29b00:769:25)
+    at async signInWithCustomToken (http://localhost:5173/node_modules/.vite/deps/firebase_auth.js?v=5ae29b00:4852:19)
+    at async http://localhost:5173/src/services/firebaseConfig.ts:44:21
+12:08:26 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Firebase: Error (auth/network-request-failed).
+12:41:45 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+12:41:45 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+12:44:12 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+12:44:12 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+1:39:59 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+1:39:59 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+3:17:23 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+3:17:23 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+5:09:03 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+5:09:03 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+5:31:15 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+5:31:15 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+4:18:26 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+4:18:26 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+8:20:10 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+8:20:11 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+8:28:03 AM [vite] (client) hmr update /src/App.tsx
+8:28:12 AM [vite] (client) hmr update /src/App.tsx
+8:28:26 AM [vite] (client) hmr update /src/App.tsx
+8:33:53 AM [vite] (client) hmr update /src/components/layout/UserJourneyTimeline.tsx
+8:33:53 AM [vite] (client) hmr invalidate /src/components/layout/UserJourneyTimeline.tsx Could not Fast Refresh ("resolveCurrentStep" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+8:33:53 AM [vite] (client) hmr update /src/App.tsx
+8:34:00 AM [vite] (client) hmr update /src/components/customer/CustomerHandoverWaitingScreen.tsx
+8:34:08 AM [vite] (client) hmr update /src/components/customer/CustomerHandoverOtpScreen.tsx
+8:36:04 AM [vite] (client) [console.warn] Could not query existing session in Firestore: FirebaseError: Missing or insufficient permissions.
+8:36:16 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:36:46 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:37:19 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:40:25 AM [vite] (client) hmr update /src/App.tsx
+8:40:26 AM [vite] (client) [console.error] React has detected a change in the order of Hooks called by App. This will lead to bugs and errors if not fixed. For more information, read the Rules of Hooks: https://react.dev/link/rules-of-hooks
+
+   Previous render            Next render
+   ------------------------------------------------------
+1. useContext                 useContext
+2. useState                   useState
+3. useState                   useState
+4. useState                   useState
+5. useState                   useState
+6. useRef                     useRef
+7. useEffect                  useEffect
+8. useEffect                  useEffect
+9. useState                   useState
+10. useState                  useState
+11. useState                  useState
+12. useState                  useState
+13. useRef                    useRef
+14. useRef                    useRef
+15. useRef                    useRef
+16. useRef                    useRef
+17. useEffect                 useEffect
+18. useRef                    useRef
+19. useEffect                 useEffect
+20. useState                  useState
+21. useState                  useState
+22. useState                  useState
+23. useState                  useState
+24. useRef                    useRef
+25. useEffect                 useEffect
+26. useRef                    useRef
+27. useEffect                 useEffect
+28. useState                  useState
+29. useState                  useState
+30. useState                  useState
+31. useState                  useState
+32. useRef                    useRef
+33. useEffect                 useEffect
+34. useState                  useState
+35. useState                  useState
+36. useRef                    useState
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+8:40:26 AM [vite] (client) [Unhandled error] Error: Should have a queue. You are likely calling Hooks conditionally, which is not allowed. (https://react.dev/link/invalid-hook-call)
+ > updateReducerImpl node_modules/react-dom/cjs/react-dom-client.development.js:7973:14
+ > updateReducer node_modules/react-dom/cjs/react-dom-client.development.js:7968:13
+ > Object.useState node_modules/react-dom/cjs/react-dom-client.development.js:26511:17
+ > exports.useState node_modules/react/cjs/react.development.js:1263:33
+ > useGeminiLiveSocket src/hooks/useGeminiLiveSocket.ts:81:34
+    79 |    const [isSpeaking, setIsSpeaking] = useState<boolean>(false);
+    80 |    const [audioLevel, setAudioLevel] = useState<number>(0);
+    81 |    const [micError, setMicError] = useState<string | null>(null);
+       |                                    ^
+    82 |  
+    83 |    const wsRef = useRef<WebSocket | null>(null);
+ > App src/App.tsx:177:21
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:25904:19
+ > renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:7662:21
+ > updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:10166:18
+ > beginWork node_modules/react-dom/cjs/react-dom-client.development.js:11778:17
+
+8:40:26 AM [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+8:41:11 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:41:17 AM [vite] (client) hmr update /src/components/screens/LiveVoiceSessionScreen.tsx
+8:41:27 AM [vite] (client) hmr update /src/components/screens/LiveVoiceSessionScreen.tsx
+8:41:34 AM [vite] (client) hmr update /src/App.tsx
+8:41:44 AM [vite] (client) hmr update /src/components/screens/LiveVoiceSessionScreen.tsx
+8:43:49 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:44:08 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:47:32 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:49:21 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:49:55 AM [vite] (client) hmr update /src/App.tsx
+8:49:56 AM [vite] (client) [console.error] React has detected a change in the order of Hooks called by App. This will lead to bugs and errors if not fixed. For more information, read the Rules of Hooks: https://react.dev/link/rules-of-hooks
+
+   Previous render            Next render
+   ------------------------------------------------------
+1. useContext                 useContext
+2. useState                   useState
+3. useState                   useState
+4. useState                   useState
+5. useState                   useState
+6. useRef                     useRef
+7. useEffect                  useEffect
+8. useEffect                  useEffect
+9. useState                   useState
+10. useState                  useState
+11. useState                  useState
+12. useState                  useState
+13. useRef                    useRef
+14. useRef                    useRef
+15. useRef                    useRef
+16. useRef                    useRef
+17. useEffect                 useEffect
+18. useRef                    useRef
+19. useEffect                 useEffect
+20. useState                  useRef
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+8:49:56 AM [vite] (client) [Unhandled error] Error: Should have a queue. You are likely calling Hooks conditionally, which is not allowed. (https://react.dev/link/invalid-hook-call)
+ > updateReducerImpl node_modules/react-dom/cjs/react-dom-client.development.js:7973:14
+ > updateReducer node_modules/react-dom/cjs/react-dom-client.development.js:7968:13
+ > Object.useState node_modules/react-dom/cjs/react-dom-client.development.js:26511:17
+ > exports.useState node_modules/react/cjs/react.development.js:1263:33
+ > useGeminiLiveSocket src/hooks/useGeminiLiveSocket.ts:69:32
+    67 |    >('disconnected');
+    68 |    const [sessionId, setSessionId] = useState<string | null>(null);
+    69 |    const [payload, setPayload] = useState<SessionPayload | null>(null);
+       |                                  ^
+    70 |    const [transcripts, setTranscripts] = useState<TranscriptItem[]>([]);
+    71 |    const transcriptsRef = useRef<TranscriptItem[]>([]);
+ > App src/App.tsx:177:21
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:25904:19
+ > renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:7662:21
+ > updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:10166:18
+ > beginWork node_modules/react-dom/cjs/react-dom-client.development.js:11778:17
+
+8:49:56 AM [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+8:50:06 AM [vite] (client) hmr update /src/App.tsx
+8:50:07 AM [vite] (client) [Unhandled error] ReferenceError: onProductOptionsReceived is not defined
+ > useGeminiLiveSocket src/hooks/useGeminiLiveSocket.ts:616:25
+    614 |        setIsThinking(false);
+    615 |      }
+    616 |    }, [wsUrl, customerId, onProductOptionsReceived, onFinancingSchemesReceived, onSchemeSelected]);
+        |                           ^
+    617 |  
+    618 |    useEffect(() => {
+ > App src/App.tsx:177:21
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:25904:19
+ > renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:7662:21
+ > updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:10166:18
+ > beginWork node_modules/react-dom/cjs/react-dom-client.development.js:11778:17
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:871:29
+ > performUnitOfWork node_modules/react-dom/cjs/react-dom-client.development.js:17641:21
+ > workLoopSync node_modules/react-dom/cjs/react-dom-client.development.js:17469:40
+ > renderRootSync node_modules/react-dom/cjs/react-dom-client.development.js:17450:10
+
+8:50:07 AM [vite] (client) [console.warn] An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+8:50:14 AM [vite] (client) hmr update /src/App.tsx
+8:50:27 AM [vite] (client) hmr update /src/components/screens/LiveVoiceSessionScreen.tsx
+8:50:42 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:50:44 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:50:46 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:50:47 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:50:50 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:50:52 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:50:53 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:50:57 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:50:58 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:00 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:03 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:05 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:07 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:09 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:11 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:14 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:16 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:17 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:19 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:21 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:23 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:26 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:28 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:30 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:32 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:34 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:37 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:39 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:40 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:42 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:44 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:46 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:49 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:50 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:51 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:53 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:55 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:57 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:51:59 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:01 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:03 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:05 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:07 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:08 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:10 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:12 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:15 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:17 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:18 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:20 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:22 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:25 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:27 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:29 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:31 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:32 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:33 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:35 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:37 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:40 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:42 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:43 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:45 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:46 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:48 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:50 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:52 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:53 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:56 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:56 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:57 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:52:58 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:00 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:03 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:05 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:06 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:08 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:10 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:13 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:15 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:16 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:18 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:19 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:21 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:23 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:24 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:27 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:27 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:28 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:31 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:33 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:35 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:37 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:39 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:40 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:41 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:43 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:46 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:48 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:50 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:52 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:54 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:53:55 AM [vite] (client) hmr update /src/components/screens/LiveVoiceSessionScreen.tsx
+8:53:58 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:54:21 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+8:55:21 AM [vite] (client) hmr update /src/App.tsx
+8:55:44 AM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+9:04:36 AM [vite] (client) hmr update /src/components/layout/UserJourneyTimeline.tsx
+9:04:36 AM [vite] (client) hmr invalidate /src/components/layout/UserJourneyTimeline.tsx Could not Fast Refresh ("resolveCurrentStep" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+9:04:36 AM [vite] (client) hmr update /src/App.tsx
+9:04:44 AM [vite] (client) hmr update /src/App.tsx
+9:10:55 AM [vite] (client) hmr update /src/App.tsx
+9:10:55 AM [vite] (client) [console.error] [vite] SyntaxError: The requested module '/src/components/timeline-options/types.ts' does not provide an export named 'TimelineOptionProps'
+9:10:55 AM [vite] (client) [console.error] [vite] Failed to reload /src/App.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+9:11:04 AM [vite] (client) hmr update /src/App.tsx
+9:11:04 AM [vite] (client) [console.error] [vite] SyntaxError: The requested module '/src/components/timeline-options/types.ts' does not provide an export named 'TimelineOptionProps'
+9:11:04 AM [vite] (client) [console.error] [vite] Failed to reload /src/App.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+9:11:09 AM [vite] (client) hmr update /src/App.tsx
+9:11:09 AM [vite] (client) [console.error] [vite] SyntaxError: The requested module '/src/components/timeline-options/types.ts' does not provide an export named 'TimelineOptionProps'
+9:11:09 AM [vite] (client) [console.error] [vite] Failed to reload /src/App.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+9:11:18 AM [vite] (client) hmr update /src/components/demo/TimelineDesignShowcase.tsx, /src/components/timeline-options/StoreConciergeTimeline.tsx, /src/components/timeline-options/DynamicIslandTimeline.tsx, /src/components/timeline-options/StoryAccordionTimeline.tsx, /src/components/timeline-options/MilestoneQuestTimeline.tsx
+9:11:31 AM [vite] (client) hmr update /src/components/timeline-options/DynamicIslandTimeline.tsx
+9:11:44 AM [vite] (client) hmr update /src/components/timeline-options/MilestoneQuestTimeline.tsx
+9:11:54 AM [vite] (client) hmr update /src/components/timeline-options/StoryAccordionTimeline.tsx
+9:12:05 AM [vite] (client) hmr update /src/components/timeline-options/StoreConciergeTimeline.tsx
+9:12:27 AM [vite] (client) hmr update /src/components/demo/TimelineDesignShowcase.tsx
+9:15:33 AM [vite] (client) hmr update /src/components/demo/TimelineDesignShowcase.tsx
+9:15:55 AM [vite] (client) hmr update /src/components/demo/TimelineDesignShowcase.tsx
+9:30:54 AM [vite] (client) hmr update /src/components/layout/UserJourneyTimeline.tsx
+9:30:55 AM [vite] (client) hmr invalidate /src/components/layout/UserJourneyTimeline.tsx Could not Fast Refresh ("resolveCurrentStep" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+9:30:55 AM [vite] (client) hmr update /src/App.tsx
+9:39:55 AM [vite] (client) hmr update /src/components/layout/UserJourneyTimeline.tsx
+9:39:56 AM [vite] (client) hmr invalidate /src/components/layout/UserJourneyTimeline.tsx Could not Fast Refresh ("resolveCurrentStep" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+9:39:56 AM [vite] (client) hmr update /src/App.tsx
+9:41:35 AM [vite] (client) hmr update /src/components/layout/UserJourneyTimeline.tsx
+9:41:35 AM [vite] Internal server error: Transform failed with 2 errors:
+
+[31m[PARSE_ERROR] [0mExpected corresponding closing tag for JSX fragment.
+     [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/components/layout/UserJourneyTimeline.tsx:919:13 [38;5;246m][0m
+     [38;5;246m│[0m
+ [38;5;246m231 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m<>
+ [38;5;240m    │[0m     ─┬  
+ [38;5;240m    │[0m      ╰── Opened here
+ [38;5;240m    │[0m 
+ [38;5;246m919 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0m[38;5;249m/[0mdiv[38;5;249m>[0m
+ [38;5;240m    │[0m             ─┬─  
+ [38;5;240m    │[0m              ╰─── Expected `</>`
+[38;5;246m─────╯[0m
+
+[31m[PARSE_ERROR] [0mAdjacent JSX elements must be wrapped in an enclosing tag.
+     [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/components/layout/UserJourneyTimeline.tsx:920:9 [38;5;246m][0m
+     [38;5;246m│[0m
+ [38;5;246m920 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m<[38;5;249m/[0m[38;5;249md[0m[38;5;249mi[0m[38;5;249mv[0m[38;5;249m>[0m
+ [38;5;240m    │[0m         ┬  
+ [38;5;240m    │[0m         ╰── 
+ [38;5;240m    │[0m 
+ [38;5;240m    │[0m [38;5;115mHelp[0m: Did you want a JSX fragment `<>...</>`?
+[38;5;246m─────╯[0m
+
+  Plugin: vite:oxc
+  File: /Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/src/components/layout/UserJourneyTimeline.tsx
+      at transformWithOxc (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:4103:19)
+      at TransformPluginContext.transform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:4174:26)
+      at EnvironmentPluginContainer.transform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:30932:51)
+      at async loadAndTransform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:20671:26)
+      at async viteTransformMiddleware (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:25205:20)
+9:41:35 AM [vite] Internal server error: Transform failed with 2 errors:
+
+[31m[PARSE_ERROR] [0mExpected corresponding closing tag for JSX fragment.
+     [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/components/layout/UserJourneyTimeline.tsx:919:13 [38;5;246m][0m
+     [38;5;246m│[0m
+ [38;5;246m231 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m<>
+ [38;5;240m    │[0m     ─┬  
+ [38;5;240m    │[0m      ╰── Opened here
+ [38;5;240m    │[0m 
+ [38;5;246m919 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0m[38;5;249m/[0mdiv[38;5;249m>[0m
+ [38;5;240m    │[0m             ─┬─  
+ [38;5;240m    │[0m              ╰─── Expected `</>`
+[38;5;246m─────╯[0m
+
+[31m[PARSE_ERROR] [0mAdjacent JSX elements must be wrapped in an enclosing tag.
+     [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/components/layout/UserJourneyTimeline.tsx:920:9 [38;5;246m][0m
+     [38;5;246m│[0m
+ [38;5;246m920 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m<[38;5;249m/[0m[38;5;249md[0m[38;5;249mi[0m[38;5;249mv[0m[38;5;249m>[0m
+ [38;5;240m    │[0m         ┬  
+ [38;5;240m    │[0m         ╰── 
+ [38;5;240m    │[0m 
+ [38;5;240m    │[0m [38;5;115mHelp[0m: Did you want a JSX fragment `<>...</>`?
+[38;5;246m─────╯[0m
+
+  Plugin: vite:oxc
+  File: /Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/src/components/layout/UserJourneyTimeline.tsx
+      at transformWithOxc (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:4103:19)
+      at TransformPluginContext.transform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:4174:26)
+      at EnvironmentPluginContainer.transform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:30932:51)
+      at async loadAndTransform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:20671:26)
+      at async viteTransformMiddleware (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:25205:20)
+9:41:35 AM [vite] (client) [console.error] [vite] Failed to reload /src/components/layout/UserJourneyTimeline.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+9:41:35 AM [vite] Internal server error: Transform failed with 2 errors:
+
+[31m[PARSE_ERROR] [0mExpected corresponding closing tag for JSX fragment.
+     [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/components/layout/UserJourneyTimeline.tsx:919:13 [38;5;246m][0m
+     [38;5;246m│[0m
+ [38;5;246m231 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m<>
+ [38;5;240m    │[0m     ─┬  
+ [38;5;240m    │[0m      ╰── Opened here
+ [38;5;240m    │[0m 
+ [38;5;246m919 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0m[38;5;249m/[0mdiv[38;5;249m>[0m
+ [38;5;240m    │[0m             ─┬─  
+ [38;5;240m    │[0m              ╰─── Expected `</>`
+[38;5;246m─────╯[0m
+
+[31m[PARSE_ERROR] [0mAdjacent JSX elements must be wrapped in an enclosing tag.
+     [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/components/layout/UserJourneyTimeline.tsx:920:9 [38;5;246m][0m
+     [38;5;246m│[0m
+ [38;5;246m920 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m<[38;5;249m/[0m[38;5;249md[0m[38;5;249mi[0m[38;5;249mv[0m[38;5;249m>[0m
+ [38;5;240m    │[0m         ┬  
+ [38;5;240m    │[0m         ╰── 
+ [38;5;240m    │[0m 
+ [38;5;240m    │[0m [38;5;115mHelp[0m: Did you want a JSX fragment `<>...</>`?
+[38;5;246m─────╯[0m
+
+  Plugin: vite:oxc
+  File: /Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/src/components/layout/UserJourneyTimeline.tsx
+      at transformWithOxc (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:4103:19)
+      at TransformPluginContext.transform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:4174:26)
+      at EnvironmentPluginContainer.transform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:30932:51)
+      at async loadAndTransform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:20671:26)
+      at async viteTransformMiddleware (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/customer-portal/node_modules/vite/dist/node/chunks/node.js:25205:20)
+9:41:35 AM [vite] (client) [console.error] [vite] Failed to reload /src/components/layout/UserJourneyTimeline.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+9:41:43 AM [vite] (client) hmr update /src/components/layout/UserJourneyTimeline.tsx
+9:41:43 AM [vite] (client) hmr invalidate /src/components/layout/UserJourneyTimeline.tsx Could not Fast Refresh ("resolveCurrentStep" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+9:41:43 AM [vite] (client) hmr update /src/App.tsx
+9:41:58 AM [vite] (client) hmr update /src/components/layout/UserJourneyTimeline.tsx
+9:41:58 AM [vite] (client) hmr invalidate /src/components/layout/UserJourneyTimeline.tsx Could not Fast Refresh ("resolveCurrentStep" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+9:41:58 AM [vite] (client) hmr update /src/App.tsx
+9:42:05 AM [vite] (client) hmr update /src/components/layout/UserJourneyTimeline.tsx
+9:42:05 AM [vite] (client) hmr invalidate /src/components/layout/UserJourneyTimeline.tsx Could not Fast Refresh ("resolveCurrentStep" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+9:42:05 AM [vite] (client) hmr update /src/App.tsx
+9:42:19 AM [vite] (client) hmr update /src/components/timeline-options/VerticalFluidTubeTimeline.tsx
+9:42:28 AM [vite] (client) hmr update /src/components/timeline-options/VerticalMetroRailTimeline.tsx
+9:42:38 AM [vite] (client) hmr update /src/components/timeline-options/VerticalLinearProgressTimeline.tsx
+9:46:42 AM [vite] (client) hmr update /src/components/layout/UserJourneyTimeline.tsx
+9:46:42 AM [vite] (client) hmr invalidate /src/components/layout/UserJourneyTimeline.tsx Could not Fast Refresh ("resolveCurrentStep" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+9:46:42 AM [vite] (client) hmr update /src/App.tsx
+10:29:17 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: FirebaseError: Firebase: Error (auth/network-request-failed).
+    at createErrorInternal (http://localhost:5173/node_modules/.vite/deps/firebase_auth.js?v=5ae29b00:435:35)
+    at _createError (http://localhost:5173/node_modules/.vite/deps/firebase_auth.js?v=5ae29b00:411:9)
+    at http://localhost:5173/node_modules/.vite/deps/firebase_auth.js?v=5ae29b00:800:19
+10:29:17 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Firebase: Error (auth/network-request-failed).
+10:29:18 AM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: FirebaseError: Firebase: Error (auth/network-request-failed).
+    at createErrorInternal (http://localhost:5173/node_modules/.vite/deps/firebase_auth.js?v=5ae29b00:435:35)
+    at _createError (http://localhost:5173/node_modules/.vite/deps/firebase_auth.js?v=5ae29b00:411:9)
+    at http://localhost:5173/node_modules/.vite/deps/firebase_auth.js?v=5ae29b00:800:19
+10:29:18 AM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Firebase: Error (auth/network-request-failed).
+10:37:53 AM [vite] (client) hmr update /src/App.tsx
+10:38:01 AM [vite] (client) hmr update /src/App.tsx
+10:38:05 AM [vite] (client) hmr update /src/components/demo/TimelineDesignShowcase.tsx
+10:38:05 AM [vite] (client) hmr update /src/components/timeline-options/VerticalMetroRailTimeline.tsx
+10:38:05 AM [vite] (client) hmr update /src/components/timeline-options/DynamicIslandTimeline.tsx
+10:38:05 AM [vite] (client) hmr update /src/components/timeline-options/MilestoneQuestTimeline.tsx
+10:38:05 AM [vite] (client) hmr update /src/components/timeline-options/StoryAccordionTimeline.tsx
+10:38:05 AM [vite] (client) page reload src/components/timeline-options/types.ts
+10:38:05 AM [vite] (client) hmr update /src/components/timeline-options/StoreConciergeTimeline.tsx
+10:38:05 AM [vite] (client) page reload src/components/timeline-options/index.ts
+10:38:05 AM [vite] (client) hmr update /src/components/timeline-options/VerticalFluidTubeTimeline.tsx
+10:38:05 AM [vite] (client) hmr update /src/components/timeline-options/VerticalLinearProgressTimeline.tsx
+10:38:15 AM [vite] (client) [console.error] [vite] Failed to reload /src/components/demo/TimelineDesignShowcase.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+10:38:15 AM [vite] (client) [console.error] [vite] Failed to reload /src/components/timeline-options/VerticalMetroRailTimeline.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+10:38:16 AM [vite] (client) [console.error] [vite] Failed to reload /src/components/timeline-options/DynamicIslandTimeline.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+10:38:17 AM [vite] (client) [console.error] [vite] Failed to reload /src/components/demo/TimelineDesignShowcase.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+10:38:17 AM [vite] (client) [console.error] [vite] Failed to reload /src/components/timeline-options/VerticalMetroRailTimeline.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+10:38:17 AM [vite] (client) [console.error] [vite] Failed to reload /src/components/timeline-options/DynamicIslandTimeline.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+10:38:17 AM [vite] (client) [console.error] [vite] Failed to reload /src/components/timeline-options/MilestoneQuestTimeline.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+10:38:17 AM [vite] (client) [console.error] [vite] Failed to reload /src/components/timeline-options/StoryAccordionTimeline.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+10:38:17 AM [vite] (client) [console.error] [vite] Failed to reload /src/components/timeline-options/StoreConciergeTimeline.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+10:38:17 AM [vite] (client) [console.error] [vite] Failed to reload /src/components/timeline-options/MilestoneQuestTimeline.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+10:38:17 AM [vite] (client) [console.error] [vite] Failed to reload /src/components/timeline-options/VerticalFluidTubeTimeline.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+10:38:17 AM [vite] (client) [console.error] [vite] Failed to reload /src/components/timeline-options/VerticalLinearProgressTimeline.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+10:38:18 AM [vite] (client) [console.error] [vite] Failed to reload /src/components/timeline-options/StoryAccordionTimeline.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+10:38:18 AM [vite] (client) [console.error] [vite] Failed to reload /src/components/timeline-options/StoreConciergeTimeline.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+10:38:19 AM [vite] (client) [console.error] [vite] Failed to reload /src/components/timeline-options/VerticalFluidTubeTimeline.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+10:38:19 AM [vite] (client) [console.error] [vite] Failed to reload /src/components/timeline-options/VerticalLinearProgressTimeline.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+12:30:14 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+12:30:14 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+12:30:14 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+12:30:14 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+2:16:22 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+2:16:22 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+3:49:44 PM [vite] (client) hmr update /src/App.tsx
+3:51:11 PM [vite] (client) hmr update /src/context/AuthContext.tsx, /src/App.tsx, /src/components/layout/StoreSelectDrawer.tsx, /src/components/screens/LoginScreen.tsx, /src/components/screens/StoreSelectScreen.tsx, /src/components/screens/HomeScreen.tsx
+3:51:11 PM [vite] (client) hmr invalidate /src/context/AuthContext.tsx Could not Fast Refresh ("CUSTOMER_PROFILES" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+3:51:11 PM [vite] (client) page reload src/context/AuthContext.tsx
+3:51:11 PM [vite] (client) hmr invalidate /src/components/screens/LoginScreen.tsx Could not Fast Refresh ("MOCK_CUSTOMERS" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+3:51:11 PM [vite] (client) hmr update /src/App.tsx
+3:51:15 PM [vite] (client) hmr update /src/components/screens/LoginScreen.tsx
+3:51:15 PM [vite] (client) hmr invalidate /src/components/screens/LoginScreen.tsx Could not Fast Refresh ("MOCK_CUSTOMERS" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+3:51:15 PM [vite] (client) hmr update /src/App.tsx
+3:51:19 PM [vite] (client) hmr update /src/App.tsx
+3:51:28 PM [vite] (client) hmr update /src/App.tsx
+3:51:30 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: Error: Backend mint-token failed with status 500
+    at http://localhost:5173/src/services/firebaseConfig.ts:38:11
+3:51:30 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Backend mint-token failed with status 500
+3:51:32 PM [vite] (client) hmr update /src/App.tsx
+4:12:51 PM [vite] (client) [console.error] [Firebase Auth] Error authenticating with custom token: TypeError: Failed to fetch
+    at http://localhost:5173/src/services/firebaseConfig.ts?t=1788862875628:28:22
+    at ensureFirebaseAuth (http://localhost:5173/src/services/firebaseConfig.ts?t=1788862875628:53:4)
+    at http://localhost:5173/src/services/firebaseConfig.ts?t=1788862875628:57:1
+4:12:51 PM [vite] (client) [console.warn] [Firebase Auth] Initial background auth attempt: Failed to fetch
+4:13:15 PM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+4:13:27 PM [vite] (client) [console.warn] WebSocket connection closed: code=1006, reason=
+4:23:20 PM [vite] (client) hmr update /src/App.tsx
+4:23:20 PM [vite] (client) hmr update /src/App.tsx
+4:23:20 PM [vite] (client) hmr update /src/components/screens/LoginScreen.tsx
+4:23:20 PM [vite] (client) hmr update /src/context/AuthContext.tsx, /src/App.tsx, /src/components/layout/StoreSelectDrawer.tsx, /src/components/screens/LoginScreen.tsx, /src/components/screens/StoreSelectScreen.tsx, /src/components/screens/HomeScreen.tsx
+4:23:20 PM [vite] (client) hmr invalidate /src/components/screens/LoginScreen.tsx Could not Fast Refresh ("MOCK_CUSTOMERS" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+4:23:20 PM [vite] (client) hmr update /src/App.tsx

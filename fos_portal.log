@@ -1,0 +1,128 @@
+
+  VITE v8.2.2  ready in 77 ms
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: http://192.168.0.111:5174/  en0
+12:00:29 PM [vite] (client) hmr update /src/components/layout/FosStoreQueueSidebar.tsx
+12:00:39 PM [vite] (client) hmr update /src/App.tsx
+12:03:49 PM [vite] (client) hmr update /src/components/screens/FosCheckedInScreen.tsx
+12:08:48 PM [vite] (client) hmr update /src/components/screens/FosCheckedInScreen.tsx
+12:09:32 PM [vite] (client) hmr update /src/components/screens/FosCheckedInScreen.tsx
+12:28:11 PM [vite] (client) hmr update /src/components/screens/FosCheckedInScreen.tsx
+12:28:22 PM [vite] (client) hmr update /src/components/layout/FosStoreQueueSidebar.tsx
+12:34:00 PM [vite] (client) hmr update /src/components/screens/FosSchemeReviewScreen.tsx
+12:43:55 PM [vite] (client) hmr update /src/components/screens/FosSchemeReviewScreen.tsx
+12:44:24 PM [vite] (client) hmr update /src/components/screens/FosFaceAuthCameraScreen.tsx
+12:50:53 PM [vite] (client) hmr update /src/components/screens/FosKycMonitorScreen.tsx
+12:55:07 PM [vite] (client) hmr update /src/components/fos/FosLoginScreen.tsx, /src/components/screens/FosSchemeReviewScreen.tsx, /src/components/screens/FosKycMonitorScreen.tsx, /src/components/screens/FosHandoverScanScreen.tsx
+12:55:07 PM [vite] (client) hmr invalidate /src/components/fos/FosLoginScreen.tsx Could not Fast Refresh ("TEST_ACCOUNTS" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+12:55:07 PM [vite] (client) hmr update /src/App.tsx
+12:55:20 PM [vite] (client) hmr update /src/components/screens/FosMitcMonitorScreen.tsx
+12:55:42 PM [vite] (client) hmr update /src/components/screens/FosLoanAuthMonitorScreen.tsx
+12:56:40 PM [vite] (client) hmr update /src/App.tsx
+1:00:43 PM [vite] (client) hmr update /src/components/fos/FosLoginScreen.tsx, /src/components/screens/FosSchemeReviewScreen.tsx, /src/components/screens/FosKycMonitorScreen.tsx, /src/components/screens/FosHandoverScanScreen.tsx, /src/components/screens/FosMitcMonitorScreen.tsx, /src/components/screens/FosLoanAuthMonitorScreen.tsx
+1:00:43 PM [vite] (client) hmr invalidate /src/components/fos/FosLoginScreen.tsx Could not Fast Refresh ("TEST_ACCOUNTS" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+1:00:43 PM [vite] (client) hmr update /src/App.tsx
+1:01:06 PM [vite] (client) hmr update /src/components/screens/FosHandoverScanScreen.tsx
+1:14:15 PM [vite] (client) hmr update /src/components/screens/FosSchemeReviewScreen.tsx
+1:14:24 PM [vite] (client) hmr update /src/components/screens/FosFaceAuthCameraScreen.tsx
+1:14:32 PM [vite] (client) hmr update /src/components/screens/FosKycMonitorScreen.tsx
+1:14:41 PM [vite] (client) hmr update /src/components/screens/FosCheckedInScreen.tsx
+1:14:49 PM [vite] (client) hmr update /src/components/screens/FosHandoverScanScreen.tsx
+1:15:04 PM [vite] (client) hmr update /src/components/screens/FosCompletedScreen.tsx
+1:21:35 PM [vite] (client) hmr update /src/components/screens/FosMitcMonitorScreen.tsx
+1:21:45 PM [vite] (client) hmr update /src/components/screens/FosLoanAuthMonitorScreen.tsx
+1:21:55 PM [vite] (client) hmr update /src/components/screens/FosMandateMonitorScreen.tsx
+1:33:06 PM [vite] (client) hmr update /src/components/screens/FosSchemeReviewScreen.tsx
+1:33:31 PM [vite] (client) hmr update /src/components/screens/FosSchemeReviewScreen.tsx
+1:33:41 PM [vite] (client) hmr update /src/components/screens/FosSchemeReviewScreen.tsx
+1:33:54 PM [vite] (client) hmr update /src/App.tsx
+10:21:45 AM [vite] (client) hmr update /src/App.tsx
+10:21:45 AM [vite] Internal server error: Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mExpected `,` or `)` but found `else`
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/App.tsx:44:7 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m29 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249mu[0m[38;5;249ms[0m[38;5;249me[0m[38;5;249mE[0m[38;5;249mf[0m[38;5;249mf[0m[38;5;249me[0m[38;5;249mc[0m[38;5;249mt[0m([38;5;249m([0m[38;5;249m)[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m>[0m[38;5;249m [0m[38;5;249m{[0m
+ [38;5;240m   │[0m            ┬  
+ [38;5;240m   │[0m            ╰── Opened here
+ [38;5;240m   │[0m 
+ [38;5;246m44 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m [0melse[38;5;249m [0m[38;5;249m{[0m
+ [38;5;240m   │[0m       ──┬─  
+ [38;5;240m   │[0m         ╰─── `,` or `)` expected
+[38;5;246m────╯[0m
+
+  Plugin: vite:oxc
+  File: /Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/fos-portal/src/App.tsx
+      at transformWithOxc (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/fos-portal/node_modules/vite/dist/node/chunks/node.js:4103:19)
+      at TransformPluginContext.transform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/fos-portal/node_modules/vite/dist/node/chunks/node.js:4174:26)
+      at EnvironmentPluginContainer.transform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/fos-portal/node_modules/vite/dist/node/chunks/node.js:30932:51)
+      at async loadAndTransform (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/fos-portal/node_modules/vite/dist/node/chunks/node.js:20671:26)
+      at async viteTransformMiddleware (file:///Users/rohanxz/code/bajaj/bajaj-in-store-financing-pwa/fos-portal/node_modules/vite/dist/node/chunks/node.js:25205:20)
+10:21:45 AM [vite] (client) [console.error] [vite] Failed to reload /src/App.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+10:21:56 AM [vite] (client) hmr update /src/App.tsx
+10:21:56 AM [vite] (client) [console.error] The final argument passed to useEffect changed size between renders. The order and size of this array must remain constant.
+
+Previous: [[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]]
+Incoming: [[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object], [object Object]]
+10:28:14 AM [vite] (client) hmr update /src/App.tsx
+10:35:56 AM [vite] (client) hmr update /src/components/screens/FosSchemeReviewScreen.tsx
+10:36:02 AM [vite] (client) hmr update /src/components/screens/FosKycMonitorScreen.tsx
+10:36:09 AM [vite] (client) hmr update /src/components/screens/FosFaceAuthCameraScreen.tsx
+10:36:51 AM [vite] (client) hmr update /src/components/screens/FosFaceAuthCameraScreen.tsx
+10:36:55 AM [vite] (client) hmr update /src/components/screens/FosKycMonitorScreen.tsx
+10:36:59 AM [vite] (client) hmr update /src/components/screens/FosSchemeReviewScreen.tsx
+10:43:16 AM [vite] (client) hmr update /src/components/screens/FosCheckedInScreen.tsx
+10:43:26 AM [vite] (client) hmr update /src/components/screens/FosCheckedInScreen.tsx
+10:43:35 AM [vite] (client) hmr update /src/components/screens/FosSchemeReviewScreen.tsx
+10:43:42 AM [vite] (client) hmr update /src/components/screens/FosSchemeReviewScreen.tsx
+10:43:50 AM [vite] (client) hmr update /src/components/screens/FosFaceAuthCameraScreen.tsx
+10:43:56 AM [vite] (client) hmr update /src/components/screens/FosFaceAuthCameraScreen.tsx
+10:44:02 AM [vite] (client) hmr update /src/components/screens/FosKycMonitorScreen.tsx
+10:44:07 AM [vite] (client) hmr update /src/components/screens/FosKycMonitorScreen.tsx
+10:55:37 AM [vite] (client) hmr update /src/components/screens/FosCheckedInScreen.tsx
+10:55:49 AM [vite] (client) hmr update /src/components/screens/FosCheckedInScreen.tsx
+10:56:02 AM [vite] (client) hmr update /src/components/screens/FosSchemeReviewScreen.tsx
+10:56:07 AM [vite] (client) hmr update /src/components/screens/FosSchemeReviewScreen.tsx
+10:56:14 AM [vite] (client) hmr update /src/components/screens/FosFaceAuthCameraScreen.tsx
+10:56:18 AM [vite] (client) hmr update /src/components/screens/FosFaceAuthCameraScreen.tsx
+10:56:31 AM [vite] (client) hmr update /src/components/screens/FosKycMonitorScreen.tsx
+10:56:35 AM [vite] (client) hmr update /src/components/screens/FosKycMonitorScreen.tsx
+10:56:40 AM [vite] (client) page reload src/utils/productMeta.ts
+12:16:49 PM [vite] (client) hmr update /src/App.tsx
+12:20:50 PM [vite] (client) hmr update /src/components/screens/FosMitcMonitorScreen.tsx
+12:23:32 PM [vite] (client) hmr update /src/components/screens/FosLoanAuthMonitorScreen.tsx
+10:50:57 AM [vite] (client) [console.warn] Backend login fallback, proceeding with session token: TypeError: Failed to fetch
+    at loginFosUser (http://localhost:5174/src/services/fosBackendApi.ts?t=1787902243892:3:20)
+    at handleSignIn (http://localhost:5174/src/components/fos/FosLoginScreen.tsx?t=1787902243892:31:22)
+    at executeDispatch (http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=c9fe4652:9141:5)
+    at runWithFiberInDEV (http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=c9fe4652:851:66)
+    at processDispatchQueue (http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=c9fe4652:9167:27)
+    at http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=c9fe4652:9454:5
+    at batchedUpdates$1 (http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=c9fe4652:2044:12)
+    at dispatchEventForPluginEventSystem (http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=c9fe4652:9240:4)
+    at dispatchEvent (http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=c9fe4652:11319:29)
+    at dispatchDiscreteEvent (http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=c9fe4652:11301:56)
+1:38:23 PM [vite] (client) hmr update /src/components/screens/FosFaceAuthCameraScreen.tsx
+8:34:20 AM [vite] (client) hmr update /src/components/screens/FosHandoverScanScreen.tsx
+8:34:28 AM [vite] (client) hmr update /src/components/screens/FosHandoverScanScreen.tsx
+8:34:43 AM [vite] (client) hmr update /src/components/screens/FosHandoverOtpWaitScreen.tsx
+8:34:52 AM [vite] (client) hmr update /src/components/screens/FosMandateMonitorScreen.tsx
+8:35:00 AM [vite] (client) hmr update /src/components/layout/FosStoreQueueSidebar.tsx
+8:35:06 AM [vite] (client) hmr update /src/components/layout/FosStoreQueueSidebar.tsx
+8:35:13 AM [vite] (client) hmr update /src/App.tsx
+3:51:53 PM [vite] (client) hmr update /src/components/fos/FosLoginScreen.tsx, /src/components/screens/FosSchemeReviewScreen.tsx, /src/components/screens/FosKycMonitorScreen.tsx, /src/components/screens/FosHandoverScanScreen.tsx, /src/components/screens/FosMitcMonitorScreen.tsx, /src/components/screens/FosLoanAuthMonitorScreen.tsx, /src/components/screens/FosFaceAuthCameraScreen.tsx
+3:52:07 PM [vite] (client) hmr update /src/App.tsx
+4:13:03 PM [vite] (client) [console.warn] Backend login fallback, proceeding with session token: TypeError: Failed to fetch
+    at loginFosUser (http://localhost:5174/src/services/fosBackendApi.ts?t=1788862913774:3:20)
+    at handleSignIn (http://localhost:5174/src/components/fos/FosLoginScreen.tsx?t=1788862913774:31:22)
+    at executeDispatch (http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=c9fe4652:9141:5)
+    at runWithFiberInDEV (http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=c9fe4652:851:66)
+    at processDispatchQueue (http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=c9fe4652:9167:27)
+    at http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=c9fe4652:9454:5
+    at batchedUpdates$1 (http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=c9fe4652:2044:12)
+    at dispatchEventForPluginEventSystem (http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=c9fe4652:9240:4)
+    at dispatchEvent (http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=c9fe4652:11319:29)
+    at dispatchDiscreteEvent (http://localhost:5174/node_modules/.vite/deps/react-dom_client.js?v=c9fe4652:11301:56)
+4:23:20 PM [vite] (client) hmr update /src/components/fos/FosLoginScreen.tsx, /src/components/screens/FosSchemeReviewScreen.tsx, /src/components/screens/FosKycMonitorScreen.tsx, /src/components/screens/FosHandoverScanScreen.tsx, /src/components/screens/FosMitcMonitorScreen.tsx, /src/components/screens/FosLoanAuthMonitorScreen.tsx, /src/components/screens/FosFaceAuthCameraScreen.tsx
+4:23:20 PM [vite] (client) hmr update /src/App.tsx

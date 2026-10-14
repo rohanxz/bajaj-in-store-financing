@@ -5,6 +5,42 @@
  * ==========================================================================
  */
 
+// Customer Profiles (with temporary avatar photos)
+const CUSTOMER_PROFILES = {
+  rahul: {
+    id: "BFL-IND-88219432",
+    name: "Rahul Sharma",
+    shortName: "Rahul...",
+    phone: "+91 98765-43210",
+    email: "rahul.sharma@bajajfinserv.in",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=256&q=80",
+    kycStatus: "Pending",
+    bankingStatus: "Active and Linked",
+    preApprovedLimit: "₹1,65,000",
+    totalLimit: "₹2,00,000",
+    storeLocation: "CROMA Phoenix #442",
+    detectedTime: "Just now"
+  },
+  ananya: {
+    id: "BFL-IND-99321487",
+    name: "Ananya Patel",
+    shortName: "Ananya Patel",
+    phone: "+91 98450-99887",
+    avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=256&q=80",
+    status: "Completed",
+    product: "Samsung S25 Ultra"
+  },
+  karan: {
+    id: "BFL-IND-77123984",
+    name: "Karan Mehta",
+    shortName: "Karan Mehta",
+    phone: "+91 98199-22334",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=256&q=80",
+    status: "MITC Pending",
+    product: "Sony Bravia 65\" TV"
+  }
+};
+
 // Global State
 let currentStep = 1;
 let kycFlag = 'NO'; // 'NO' = KYC Capture Required, 'YES' = Skips to MITC (Step 10)
@@ -18,9 +54,13 @@ let viewMode = 'both'; // 'both', 'mobile', 'tablet'
 let selectedProduct = {
   id: 1,
   title: "Apple iPhone 16 Pro Max",
-  specs: "256GB • Natural Titanium",
+  specs: "256GB • Desert Titanium • Model A3296",
   price: "₹1,44,900",
   rawPrice: 144900,
+  stock: 4,
+  floorBin: "MOB-3B",
+  imeiPool: "Ready",
+  warranty: "1 Yr Apple",
   schemeA_emi: "₹24,150",
   schemeB_emi: "₹28,980"
 };
@@ -468,7 +508,7 @@ function renderMobileScreen(step) {
       container.innerHTML = `
         <div class="profile-id-card">
           <div class="profile-header">
-            <div class="profile-avatar">RS</div>
+            <img src="${CUSTOMER_PROFILES.rahul.avatar}" class="profile-avatar" style="object-fit:cover; border:2px solid var(--croma-teal); width:52px; height:52px; border-radius:50%;" alt="Rahul" />
             <div>
               <div style="font-weight:700; font-size:1.05rem; color:#fff;">Rahul Sharma</div>
               <div style="font-size:0.75rem; color:var(--text-secondary);">Male, 34 yrs • +91 98765-43210</div>
@@ -964,47 +1004,243 @@ function renderTabletScreen(step) {
 
   // Render Sidebar Queue: Customer is already logged in and checked in
   sidebar.innerHTML = `
-    <div class="section-title">Live Store Queue</div>
-    <div class="card-glass ${step >= 5 ? 'highlight' : ''}" style="padding:10px;">
-      <div style="display:flex; justify-content:space-between; align-items:center;">
-        <span style="font-weight:700; font-size:0.82rem; color:#fff;">Rahul Sharma</span>
-        <span class="badge ${step >= 18 ? 'badge-success' : step >= 5 ? 'badge-success' : 'badge-warning'}">
-          ${step >= 18 ? 'Completed' : step >= 5 ? 'Offer Locked' : 'Checked In'}
-        </span>
-      </div>
-      <div style="font-size:0.7rem; color:var(--text-secondary); margin-top:4px;">
-        Store: CROMA Phoenix • KYC: ${kycFlag}
+    <div class="section-title">LIVE STORE QUEUE</div>
+    <div class="queue-card ${step >= 5 ? 'highlight' : 'active'}" style="cursor:pointer;">
+      <div class="queue-card-top">
+        <div class="queue-avatar-wrapper">
+          <img src="${CUSTOMER_PROFILES.rahul.avatar}" class="queue-avatar-img" alt="Rahul" />
+        </div>
+        <div class="queue-info">
+          <div class="queue-name-row">
+            <span class="queue-name">${CUSTOMER_PROFILES.rahul.shortName}</span>
+            <span class="badge ${step >= 18 ? 'badge-success' : step >= 5 ? 'badge-success' : 'badge-in-store'}">
+              ${step >= 18 ? 'Completed' : step >= 5 ? 'Offer Locked' : 'In Store'}
+            </span>
+          </div>
+          <div class="queue-sub-row">
+            <span>KYC: <strong style="color:${kycFlag === 'YES' ? '#34D399' : 'var(--status-warning)'};">${kycFlag === 'YES' ? 'YES' : 'Pending'}</strong></span>
+            <span>•</span>
+            <span>Limit: <strong style="color:var(--croma-teal);">₹1.65L</strong></span>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="card-glass" style="padding:10px; opacity:0.6;">
-      <div style="display:flex; justify-content:space-between;">
-        <span style="font-size:0.8rem;">Ananya Patel</span>
-        <span class="badge badge-success">Completed</span>
+    <div class="queue-card" style="opacity:0.65;">
+      <div class="queue-card-top">
+        <div class="queue-avatar-wrapper">
+          <img src="${CUSTOMER_PROFILES.ananya.avatar}" class="queue-avatar-img" alt="Ananya" />
+        </div>
+        <div class="queue-info">
+          <div class="queue-name-row">
+            <span class="queue-name">${CUSTOMER_PROFILES.ananya.shortName}</span>
+            <span class="badge badge-success">Completed</span>
+          </div>
+          <div class="queue-sub-row">${CUSTOMER_PROFILES.ananya.product}</div>
+        </div>
       </div>
-      <div style="font-size:0.7rem; color:var(--text-secondary);">Samsung S25 Ultra</div>
     </div>
 
-    <div class="card-glass" style="padding:10px; opacity:0.5;">
-      <div style="display:flex; justify-content:space-between;">
-        <span style="font-size:0.8rem;">Karan Mehta</span>
-        <span class="badge badge-warning">MITC Pending</span>
+    <div class="queue-card" style="opacity:0.55;">
+      <div class="queue-card-top">
+        <div class="queue-avatar-wrapper">
+          <img src="${CUSTOMER_PROFILES.karan.avatar}" class="queue-avatar-img" alt="Karan" />
+        </div>
+        <div class="queue-info">
+          <div class="queue-name-row">
+            <span class="queue-name">${CUSTOMER_PROFILES.karan.shortName}</span>
+            <span class="badge badge-warning">MITC Pending</span>
+          </div>
+          <div class="queue-sub-row">${CUSTOMER_PROFILES.karan.product}</div>
+        </div>
       </div>
-      <div style="font-size:0.7rem; color:var(--text-secondary);">Sony Bravia 65" TV</div>
     </div>
   `;
 
   // Render Workspace Content
   workspace.innerHTML = "";
 
-  if (step <= 4) {
+  if (step <= 3) {
+    // 1st screen: At the time of checkin & product search
     workspace.innerHTML = `
-      <div class="card-glass" style="text-align:center; padding:36px;">
-        <div style="font-size:2.5rem; margin-bottom:10px;">🏪</div>
-        <h3 style="color:#fff;">FOS Portal — CROMA Mumbai High Street #442</h3>
-        <p style="font-size:0.8rem; color:var(--text-secondary); margin-top:6px;">
-          Customer Rahul Sharma checked in. Awaiting customer product discovery & scheme selection via Bajaj Finserv PWA...
-        </p>
+      <div class="dossier-card">
+        <div class="dossier-header">
+          <div class="dossier-title">
+            <span class="pulse-dot green"></span>
+            <span>IN-STORE CUSTOMER ARRIVAL DOSSIER</span>
+          </div>
+          <div class="dossier-meta">
+            <span>📍 CROMA Phoenix #442</span>
+            <span>🕒 Detected: Just now</span>
+          </div>
+        </div>
+
+        <div class="dossier-body">
+          <!-- Left: Customer Profile -->
+          <div class="dossier-customer-col">
+            <div class="dossier-avatar-wrapper">
+              <img src="${CUSTOMER_PROFILES.rahul.avatar}" alt="Rahul Sharma" class="dossier-avatar-img" />
+              <div class="store-detected-badge">✓ STORE DETECTED</div>
+            </div>
+            <div class="dossier-customer-info">
+              <div class="dossier-name">Rahul Sharma</div>
+              <div class="dossier-id">ID: BFL-IND-882194...</div>
+              <div class="dossier-phone">📱 +91 98765-43210</div>
+            </div>
+          </div>
+
+          <!-- Right: Status & Eligibility -->
+          <div class="dossier-status-col">
+            <div class="status-card-inner">
+              <div class="status-card-header">
+                <span class="status-card-title">CUSTOMER STATUS & ELIGIBILITY</span>
+                <span class="status-pill pending">${kycFlag === 'YES' ? 'Pre-Approved' : 'Pending'}</span>
+              </div>
+              <div class="status-card-list">
+                <div class="status-list-item">
+                  <span class="status-bullet">•</span>
+                  <span class="status-label">KYC Status :</span>
+                  <span class="status-val pending">${kycFlag === 'YES' ? 'Verified' : 'Pending'}</span>
+                </div>
+                <div class="status-list-item">
+                  <span class="status-bullet">•</span>
+                  <span class="status-label">Banking Status :</span>
+                  <span class="status-val active">Active and Linked</span>
+                </div>
+                <div class="status-list-item">
+                  <span class="status-bullet">•</span>
+                  <span class="status-label">Pre approved limit :</span>
+                  <span class="status-val limit">₹1,65,000</span>
+                </div>
+                <div class="status-subtext">(Total: ₹2,00,000)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  } else if (step === 4) {
+    // 2nd screen: When he selects a product and EMI options are ready
+    workspace.innerHTML = `
+      <div class="dossier-card compact">
+        <div class="dossier-header">
+          <div class="dossier-title">
+            <span class="pulse-dot green"></span>
+            <span>IN-STORE CUSTOMER ARRIVAL DOSSIER</span>
+          </div>
+          <div class="dossier-meta">
+            <span>📍 CROMA Phoenix #442</span>
+            <span>🕒 Detected: Just now</span>
+          </div>
+        </div>
+
+        <div class="dossier-body">
+          <!-- Left: Customer Profile -->
+          <div class="dossier-customer-col">
+            <div class="dossier-avatar-wrapper">
+              <img src="${CUSTOMER_PROFILES.rahul.avatar}" alt="Rahul Sharma" class="dossier-avatar-img" />
+              <div class="store-detected-badge">✓ STORE DETECTED</div>
+            </div>
+            <div class="dossier-customer-info">
+              <div class="dossier-name">Rahul Sharma</div>
+              <div class="dossier-id">ID: BFL-IND-882194...</div>
+              <div class="dossier-phone">📱 +91 98765-43210</div>
+            </div>
+          </div>
+
+          <!-- Right: Status & Eligibility -->
+          <div class="dossier-status-col">
+            <div class="status-card-inner">
+              <div class="status-card-header">
+                <span class="status-card-title">CUSTOMER STATUS & ELIGIBILITY</span>
+                <span class="status-pill pending">${kycFlag === 'YES' ? 'Pre-Approved' : 'Pending'}</span>
+              </div>
+              <div class="status-card-list">
+                <div class="status-list-item">
+                  <span class="status-bullet">•</span>
+                  <span class="status-label">KYC Status :</span>
+                  <span class="status-val pending">${kycFlag === 'YES' ? 'Verified' : 'Pending'}</span>
+                </div>
+                <div class="status-list-item">
+                  <span class="status-bullet">•</span>
+                  <span class="status-label">Banking Status :</span>
+                  <span class="status-val active">Active and Linked</span>
+                </div>
+                <div class="status-list-item">
+                  <span class="status-bullet">•</span>
+                  <span class="status-label">Pre approved limit :</span>
+                  <span class="status-val limit">₹1,65,000</span>
+                </div>
+                <div class="status-subtext">(Total: ₹2,00,000)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Card: PRODUCT SELECTED BY CUSTOMER -->
+      <div class="product-selected-card">
+        <div class="product-selected-header">
+          <div class="product-selected-title">
+            <span class="pulse-dot green"></span>
+            <span>PRODUCT SELECTED BY CUSTOMER</span>
+          </div>
+          <div class="product-selected-meta">
+            <span style="font-size:0.7rem; color:#fff;">⚪</span>
+            <span>Selected: Just now</span>
+          </div>
+        </div>
+
+        <div class="product-selected-body">
+          <!-- Left: Product Specs -->
+          <div class="product-specs-box">
+            <div class="product-spec-row-top">
+              <div class="product-icon-container">📱</div>
+              <div class="product-name-and-variant">
+                <div class="product-title-text">${selectedProduct.title}</div>
+                <div class="product-variant-text">${selectedProduct.specs}</div>
+                <div class="product-price-stock-row">
+                  <span class="product-price-cyan">${selectedProduct.price}</span>
+                  <span class="stock-pill">IN STOCK (${selectedProduct.stock || 4})</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-meta-footer">
+              <div class="meta-item">
+                <span class="meta-label">Floor Bin:</span>
+                <span class="meta-val">${selectedProduct.floorBin || 'MOB-3B'}</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">IMEI Pool:</span>
+                <span class="meta-val cyan">${selectedProduct.imeiPool || 'Ready'}</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Warranty:</span>
+                <span class="meta-val">${selectedProduct.warranty || '1 Yr Apple'}</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: EMI Financing Status -->
+          <div class="emi-status-box">
+            <div class="emi-status-header">
+              <span class="emi-title-text">EMI FINANCING STATUS</span>
+              <span class="awaiting-pill">AWAITING PLAN</span>
+            </div>
+
+            <div class="emi-alert-callout">
+              <div class="emi-pulse-icon">🟠</div>
+              <div class="emi-alert-text">
+                <strong>EMI options ready; customer to select EMI plan</strong>
+              </div>
+            </div>
+
+            <div class="emi-evaluating-subtext">
+              Customer is evaluating Scheme A, B, C on mobile
+            </div>
+          </div>
+        </div>
       </div>
     `;
   } else if (step === 5) {
